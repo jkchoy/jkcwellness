@@ -1,0 +1,1139 @@
+/* --------------------
+
+TABLE OF CONTENTS 
+
+# GLOBALS
+    # DEFINE GLOBAL VARIABLES (CUSTOM PROPERTIES)
+    # SET GLOBAL COLORS
+    # SET GLOBAL TYPOGRAPHY
+    # GLOBAL MEDIA (images, video, svg)
+    # GLOBAL HELPERS
+    # GLOBAL RESETS
+        # ENABLE SMOOTH SCROLLING
+
+# LAYOUT
+    # CONTAINER
+    # GRID SYSTEM (12 column)
+
+# SITE STRUCTURE
+    # HEADER
+        # LOGO
+        # SITE NAV
+        # DROPDOWN MENU
+    # MAIN
+        # SECTIONS
+    # FOOTER
+
+# UI COMPONENTS
+    # BUTTONS
+    # CARDS
+    # HR (HORIZONTAL RULE)
+    # CODE BLOCKS
+
+    (WE WILL ADD MORE HERE)
+
+# CUSTOM SITE STYLING (OPINIONATED)
+    # BODY GRID LAYOUT SYSTEM (header, main, and footer)
+    # CUSTOM HERO STYLING
+    # CUSTOM PAGE LAYOUT - 2 COLUMNS: ASIDE + MAIN CONTENT
+    # STICKYBOX
+    # JKC TYPE BLOCK
+
+   # ANIMATION
+    # REGULAR ON PAGE LOAD ANIMATION
+    # SCROLL TRIGGRED ANIMATION 
+----------------------- */
+
+/* ------------------
+        GLOBALS 
+--------------------- */
+
+/* DEFINE GLOBAL VARIABLES */
+:root {
+
+  /* DEFINE BASE COLORS */
+  --color-white: #FDFDFD;
+  --color-black: #121228;
+  --color-black-80: rgb(0 0 0 / .8);
+
+  --color-grey-200: rgb(0 0 0 / .2);
+
+  /* main blue */
+  --color-blue-900: #043170;
+
+  /* light background boxes & title heading box*/
+  --color-gray-100: #F2F2F2;
+  /* buttons */
+  --color-gray-200: #D9D9D9;
+  /* subheader */
+  --color-gray-600: #7F7A7A;
+
+
+  --color-gold-400: #D8A008;
+  --color-gold-600: #9E7607;
+
+
+  /* DEFINE SEMANTIC COLORS */
+  --color-body-background: var(--color-white);
+  --color-body-text: var(--color-black);
+  --color-body-text-dark: var(--color-blue-900);
+
+  --color-primary: var(--color-blue-400);
+  --color-primary-dark: var(--color-blue-900);
+  --color-secondary: var(--color-gray-600);
+
+  /* ACTION COLORS */
+  --color-links: var(--color-blue-900);
+  --color-links-hover: var(--color-gold-400);
+  --color-links-light: var(--color-gray-600);
+
+  /* SECTION SPECIFIC */
+  --color-siteheader-background: transparent;
+  --color-siteheader-links: var(--color-black-80);
+  --color-siteheader-hover: var(--color-gold-400);
+  --color-hero-background: var(--color-gray-100);
+  --color-sitefooter-background: transparent;
+
+  /* BORDERS */
+  --color-border: var(--color-grey-200);
+  --border-radius: 5px;
+  --border-thickness: .5px;
+
+  /* SIZING UNITS */
+  --unit-2xs: 0.25rem;
+  --unit-xs: 0.5rem;
+  --unit-s: 1rem;
+  --unit-m: 1.5rem;
+  --unit-l: 2rem;
+  --unit-xl: 3rem;
+  --unit-2xl: 4rem;
+  --unit-3xl: 6rem;
+  --container-width: 1100px;
+
+
+
+  /* IMPORT GOOGLE FONTS */
+
+
+  /* <weight>: Use a value from 300 to 700 */
+  /* <uniquifier>: Use a unique and descriptive class name */
+
+  .cormorant {
+    font-family: "Cormorant", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+  .nunito-sans {
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100,
+      "YTLC" 500;
+  }
+
+  /* GLOBAL FONTS */
+
+  --font-body: Nunito Sans,
+  Lato,
+  arial,
+  "helvetica neue",
+  sans-serif;
+
+  --font-headings: Cormorant,
+  serif;
+
+}
+
+/* SET GLOBAL COLORS */
+body {
+  background-color: var(--color-body-background);
+  color: var(--color-body-text);
+}
+
+/* HEADINGS */
+h1,
+h2,
+h3 {
+  color: var(--color-body-text-dark);
+
+  /* ADD SUPPORT FOR TEXTWRAP BALANCE */
+  text-wrap: balance;
+}
+
+/* LIMIT THE NUMBER OF CHARACTERS PER LINE FOR ALL PARAGRAPHS */
+p {
+  max-inline-size: 66ch;
+}
+
+/* REMOVE WIDOWS FOR ALL PARAGRAPHS AND LIST ITEMS*/
+p,
+li {
+  text-wrap: pretty;
+}
+
+/* LINKS */
+a {
+  color: var(--color-links);
+
+  /* STYLE THE UNDERLINE */
+  text-decoration-color: var(--color-links-light);
+  text-underline-offset: .135em;
+  text-decoration-thickness: .1em;
+}
+
+a:hover {
+  color: var(--color-links-hover);
+}
+
+/* GLOBAL TYPOHRAPHY */
+body {
+  font-family: var(--font-body);
+  font-size: 100%;
+  line-height: 1.4;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-headings);
+}
+
+/* GLOBAL MEDIA */
+
+/* IMAGES (Responsive)
+ Responsive on small screens
+ Do not stretch too large (beyond the orignal)
+ on large screens */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* GLOBAL HELPERS */
+
+.text-centered {
+  text-align: center;
+}
+
+/* CENTER PARAGRAPHS INSIDE CENTERED PARENTS */
+.text-centered p {
+  margin-inline: auto;
+}
+
+/* HIDE CONTENT VISUALLY (BUT KEEP FOR SEO AND ACCESSIBILITY) */
+.hide-visually,
+.visually-hidden,
+.screen-reader-only {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+/* GLOBAL RESETS */
+
+/* Remove the default 8pm margin on body */
+body {
+  margin: 0;
+}
+
+/* Set all elements to box sizing border box */
+* {
+  box-sizing: border-box;
+}
+
+/* SMOOTH SCROLLING */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ADD OFFSET TO ALL INLINE ANCHOR LINKS */
+:target {
+  scroll-margin-top: var(--unit-m);
+}
+
+
+/* ------------------
+      LAYOUT 
+--------------------- */
+
+/* CONTAINER */
+
+.container {
+  max-width: var(--container-width);
+  margin-inline: auto;
+  padding-inline: var(--unit-s);
+}
+
+
+/* GRID SYSTEM (12 column) */
+
+.row {
+  --grid-gap: var(--unit-s);
+}
+
+.row>* {
+  margin-block-end: var(--grid-gap);
+}
+
+/* NEW width SYNTAX (updated from min-width: 768px)  */
+@media (width >=768px) {
+
+  .row {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: var(--grid-gap);
+  }
+
+  /* COMMONLY USED SEMANTIC COLUMNS */
+  .one-whole {
+    grid-column: auto / span 12;
+  }
+
+  .one-half {
+    grid-column: auto / span 6;
+  }
+
+  .one-third {
+    grid-column: auto / span 4;
+  }
+
+  .two-thirds {
+    grid-column: auto / span 8;
+  }
+
+  .one-fourth {
+    grid-column: auto / span 3;
+  }
+
+  .three-fourths {
+    grid-column: auto / span 9;
+  }
+
+  /* SWAP (REVERSE COLUMNS) - WORKS ONLY w/ 2 COLUMNS */
+  .row.swapped>*:first-child {
+    order: 2;
+  }
+
+  .row.swapped>*:last-child {
+    order: 1;
+  }
+
+  /* CENTERED COLUMNS */
+  .one-half.centered {
+    grid-column-start: 4;
+  }
+
+  .two-thirds.centered {
+    grid-column-start: 3;
+  }
+
+  /* 12 COLUMN CLASS-BASED GRID SYSTEM */
+  .col-1 {
+    grid-column: auto / span 1;
+  }
+
+  .col-2 {
+    grid-column: auto / span 2;
+  }
+
+  .col-3 {
+    grid-column: auto / span 3;
+  }
+
+  .col-4 {
+    grid-column: auto / span 4;
+  }
+
+  .col-5 {
+    grid-column: auto / span 5;
+  }
+
+  .col-6 {
+    grid-column: auto / span 6;
+  }
+
+  .col-7 {
+    grid-column: auto / span 7;
+  }
+
+  .col-8 {
+    grid-column: auto / span 8;
+  }
+
+  .col-9 {
+    grid-column: auto / span 9;
+  }
+
+  .col-10 {
+    grid-column: auto / span 10;
+  }
+
+  .col-11 {
+    grid-column: auto / span 11;
+  }
+
+  .col-12 {
+    grid-column: auto / span 12;
+  }
+
+  /* PUSHES */
+  .push-1 {
+    grid-column-start: 2;
+  }
+
+  .push-2 {
+    grid-column-start: 3;
+  }
+
+  .push-3 {
+    grid-column-start: 4;
+  }
+
+  .push-4 {
+    grid-column-start: 5;
+  }
+
+  .push-5 {
+    grid-column-start: 6;
+  }
+
+  .push-6 {
+    grid-column-start: 7;
+  }
+
+  .push-7 {
+    grid-column-start: 8;
+  }
+
+  .push-8 {
+    grid-column-start: 9;
+  }
+
+  .push-9 {
+    grid-column-start: 10;
+  }
+
+  .push-10 {
+    grid-column-start: 11;
+  }
+
+  .push-11 {
+    grid-column-start: 12;
+  }
+}
+
+
+/* FOR DEMO PURPOSES ONLY */
+.row.demo>* {
+  background-color: var(--color-gray-100);
+  text-align: center;
+  padding: var(--unit-s);
+}
+
+/* ------------------
+  SITE STRUCTURE 
+--------------------- */
+
+/* SITE HEADER */
+.site-header {
+  background-color: var(--color-siteheader-background);
+  padding-block: var(--unit-s);
+  padding-inline: var(--unit-s);
+
+
+  /* DISPLAY LOGO ON LEFT AND NAV ON RIGHT */
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  gap: var(--unit-s);
+  flex-wrap: wrap;
+}
+
+/* REMOVE HEADER PADDING IF IT HAS A CONTAINER */
+.site-header:has(.container) {
+  padding-inline: 0;
+}
+
+/* LOGO STYLING */
+.site-header .logo {
+  display: flex;
+  align-items: center;
+  gap: var(--unit-s);
+}
+
+.site-header .logo svg {
+  max-height: 50px;
+  min-width: 50px;
+}
+
+/* CHRS COYIER'S FIX FOR GAP UNDR INLINE IMAGES AND SVG*/
+.site-header .logo img,
+.site-header .logo svg {
+  vertical-align: middle;
+}
+
+.site-header .logo h1 {
+  font-size: 1.3125rem;
+  margin: 0;
+}
+
+.site-header .logo a {
+  text-decoration: none;
+}
+
+/* MAIN SITE NAV */
+
+/* DROPDOWN MENU FOR MY CRAFT */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: var(--color-siteheader-links);
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+/* .navbar a:hover, */
+.dropdown:hover .dropbtn {
+  background-color: var(--color-gold-400);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: var(--color-blue-900);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: var(--color-gray-100);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.site-nav ul,
+.dropbtn {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: var(--unit-s);
+  flex-wrap: wrap;
+}
+
+.site-nav a,
+.dropbtn {
+  color: var(--color-siteheader-links);
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  padding: var(--unit-xs);
+  padding-block-start: calc(var(--unit-xs) + .1em);
+}
+
+.site-nav a:hover,
+.dropbtn:hover {
+  color: var(--color-siteheader-hover);
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  padding: var(--unit-xs);
+  padding-block-start: calc(var(--unit-xs) + .1em);
+}
+
+
+
+
+/* SHOW MENU BUTTON ON HIGHER LAYER WHEN NAV IS OPEN */
+.site-nav .menubutton {
+  position: relative;
+  z-index: 100;
+  border: none;
+  font-size: inherit;
+  font-family: inherit;
+  padding: var(--unit-xs);
+  margin-block-start: var(--unit-xs);
+  background-color: transparent;
+}
+
+/* SMALL SCREENS: SHOW MENU BUTTON, HIDE NAV */
+.site-nav .menubutton {
+  display: block;
+}
+
+.site-nav ul {
+  display: none;
+}
+
+/* BIG SCREENS:  HIDE MENU BUTTON, SHOW NAV*/
+@media (width >=768px) {
+  .site-nav .menubutton {
+    display: none;
+  }
+
+  .site-nav ul {
+    display: flex;
+  }
+}
+
+/* SMALL SCREENS ONLY: ENABLE OVERLAY NAV */
+@media (width < 768px) {
+
+  .site-nav[data-menustate] ul {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--color-blue-900);
+    /* transition: translate 0.3s ease-out; */
+  }
+
+  .site-nav[data-menustate] a {
+    color: var(--color-white);
+  }
+
+  .site-nav[data-menustate="open"] ul {
+    translate: 0 0;
+    animation: openMenuAnimation .3s forwards;
+  }
+
+  .site-nav[data-menustate="closed"] ul {
+    translate: 100% 0;
+    animation: closedMenuAnimation .3s forwards;
+  }
+
+  @keyframes openMenuAnimation {
+    0% {
+      translate: 100% 0;
+    }
+
+    100% {
+      translate: 0 0;
+    }
+  }
+
+  @keyframes closedMenuAnimation {
+    0% {
+      translate: 0 0;
+    }
+
+    100% {
+      translate: 100% 0;
+    }
+  }
+
+  /* ENABLE SVG ANIMATION FOR THE NAVICON */
+  .site-nav[data-menustate] .simple-navicon rect {
+    transition: all .3s ease-out;
+    fill: var(--color-primary);
+  }
+
+  /* CHANGE COLOR OF THE SVG NAVICON WHEN MENU IS OPEN */
+  .site-nav[data-menustate="open"] .simple-navicon rect {
+    fill: var(--color-white);
+  }
+
+  /* ANIMATE NAVICON LINES TO AN X WHEN OPEN */
+  .site-nav .simple-navicon {
+    display: block;
+
+  }
+
+  .site-nav .simple-navicon rect {
+    transform-origin: center;
+    width: 100%;
+  }
+
+  .site-nav[data-menustate="open"] .simple-navicon {
+    position: fixed;
+    top: calc(var(--unit-s) + var(--unit-s));
+    right: calc(var(--unit-s) + var(--unit-xs));
+  }
+
+  .site-nav[data-menustate="open"] .simple-navicon-top {
+    rotate: 45deg;
+    translate: -21% 24%;
+  }
+
+  .site-nav[data-menustate="open"] .simple-navicon-middle {
+    opacity: 0;
+  }
+
+  .site-nav[data-menustate="open"] .simple-navicon-bottom {
+    rotate: -45deg;
+    translate: -21% -24%;
+  }
+
+}
+
+
+/* SITE MAIN */
+.site-main {
+  background-color: transparent;
+}
+
+/* STYLING FOR ALL SECTIONS */
+section {
+  padding-block: var(--unit-2xl);
+}
+
+.hero {
+  background-color: var(--color-hero-background);
+  padding-block: var(--unit-3xl);
+  padding-inline: var(--unit-s);
+}
+
+.hero:has(.container) {
+  padding-inline: 0;
+}
+
+
+/* SITE FOOTER */
+.site-footer {
+  background-color: var(--color-sitefooter-background);
+  padding-block: var(--unit-2xl);
+  padding-inline: var(--unit-s);
+}
+
+/* REMOVE FOOTER PADDING IF IT HAS A CONTAINER */
+.site-footer:has(.container) {
+  padding-inline: 0;
+}
+
+/* ------------------
+  UI COMPONENTS 
+--------------------- */
+
+/* BUTTONS */
+.button {
+  background-color: var(--color-links);
+  color: var(--color-white);
+  padding: var(--unit-s) var(--unit-m);
+  margin-block: var(--unit-2xs);
+  display: inline-block;
+  text-decoration: none;
+  border-radius: var(--border-radius);
+  line-height: 1;
+}
+
+.button:hover {
+  background-color: var(--color-links-hover);
+  color: var(--color-white);
+}
+
+/* CARDS */
+.card {
+  border: var(--border-thickness) solid var(--color-border);
+  display: inline-block;
+  padding: var(--unit-s);
+  border-radius: var(--border-radius);
+}
+
+.color-swatch {
+  --_swatch-color: grey;
+  background-color: var(--_swatch-color);
+  width: 150px;
+  height: 150px;
+}
+
+/* HR */
+hr {
+  border: none;
+  border-bottom: var(--border-thickness) solid var(--color-border);
+  margin: var(--unit-xl) 0;
+}
+
+/* Code Blocks */
+pre:has(code) {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  padding-inline: var(--unit-m);
+  border-radius: var(--border-radius);
+  white-space: pre-wrap;
+}
+
+/* SWIPER CSS STYLING */
+
+.swiper {
+  padding-block-end: 2rem;
+  text-align: center;
+}
+
+
+.swiper-wrapper {}
+
+/* MOVE SWIPER ARROWS OUTSIDE OF SWIPER */
+.swiper-button-prev,
+.swiper-button-next {
+  background-color: var(--color-white);
+  padding: var(--unit-xs);
+  border-radius: 100%;
+}
+
+/* TEMP WAY TO MOVE ARROWS OUTSIDE OF SWIPER */
+.swiper {
+  padding-inline: 50px;
+}
+
+
+/* TEMP SOLUTION COVERS THE CONENT WITH A WHITE BG, FIX IN THE FUTURE IF THERE IS TIME */
+.swiper-button-prev {
+  translate: -4px -50%;
+  background-color: white;
+  height: 100%;
+  border-radius: 0;
+  top: 0;
+  left: 0;
+}
+
+.swiper-button-next {
+  translate: 4px -50%;
+  background-color: white;
+  height: 100%;
+  border-radius: 0;
+  top: 0;
+  right: 0;
+}
+
+/* REMOVE COLOR CARD WIDTHS AND HEIGHTS WHEN INSIDE A SWIPER SLIDE */
+.swiper-slide .card {
+  display: block;
+}
+
+.swiper-slide .color-swatch {
+  width: 100%;
+  min-height: 150px;
+}
+
+
+/* ------------------
+  CUSTOM SITE STYLING 
+--------------------- */
+
+/* PUSH THE FOOTER TO THE BOTTOM BY DEFAULT */
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100svh;
+}
+
+/* TO FIX OVERFLOW WORD BREAK */
+body>* {
+  min-width: 0;
+}
+
+/* NUDGE THE NAV ITEMS DOWN TO ALIGN WITH IMAGE LOGO TEXT */
+.site-header .site-nav a {
+  padding-block-start: calc(var(--unit-xs) + .35em);
+}
+
+/* CUSTOM HERO STYLING */
+.hero h1 {
+  font-size: clamp(2.5em, 4vw, 4em);
+  margin-block: 0;
+  overflow-wrap: break-word;
+}
+
+.hero p {
+  text-wrap: balance;
+}
+
+/* CUSTOM PAGE LAYOUT - 2 COLUMNS: ASIDE + MAIN CONTENT */
+
+
+@media (width >=768px) {
+
+  .pagelayout-wrapper-twocolumn {
+    display: flex;
+    gap: var(--unit-l);
+  }
+
+  .pagesection-aside {
+    width: 25%;
+  }
+
+  .pagesection-maincontent {
+    width: 75%;
+  }
+
+}
+
+/* STICKYBOX */
+/* NOTE NEEDED ON SMALL SCREENS, SO IT IS SET INSIDE OF A MEDIA QUERY SO IT ALLOWS THE OVERLAY MENU TO RENDER ON TOP ON SMALL SCREENS */
+@media (width >=768px) {
+  .stickybox {
+    position: sticky;
+    top: var(--unit-m);
+  }
+}
+
+/* JKC TYPE BLOCK */
+.jkc-eyebrow {
+  font-size: .875rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  opacity: .5;
+  line-height: 1;
+}
+
+.jkc-headline {
+  font-size: 3rem;
+  margin-block: var(--unit-s);
+  line-height: 1.1;
+}
+
+.jkc-subhead {
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-style: italic;
+  margin-block: var(--unit-xs);
+  opacity: .8;
+  line-height: 1.2;
+}
+
+/* ------------------
+  ANIMATION 
+--------------------- */
+
+/* REGULAR ON PAGE ANIMATION */
+
+.slide-from-top-and-fade-in {
+  animation-name: slide-from-top-and-fade-in;
+  animation-duration: .1s;
+  animation-timing-function: cubic-bezier(0, .5, .5, 1);
+  animation-fill-mode: forwards;
+  opacity: 0;
+  translate: 0 -40px;
+
+}
+
+@keyframes slide-from-top-and-fade-in {
+  0% {
+    opacity: 0;
+    translate: 0 -40px;
+  }
+
+  100% {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+
+
+.slide-from-left-and-fade-in {
+  animation-name: scale-and-fade-in;
+  animation-duration: .2s;
+  animation-timing-function: cubic-bezier(0, 1, 0, 1);
+  animation-fill-mode: forwards;
+  opacity: 0;
+  translate: -20px 0;
+
+}
+
+@keyframes slide-from-left-and-fade-in {
+  0% {
+    opacity: 0;
+    translate: -20px;
+  }
+
+  100% {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+
+.delay-0 {
+  animation-delay: 0s;
+}
+
+.delay-1 {
+  animation-delay: .1s;
+}
+
+.delay-2 {
+  animation-delay: .2s;
+}
+
+.delay-3 {
+  animation-delay: .3s;
+}
+
+.delay-4 {
+  animation-delay: .5s;
+}
+
+.delay-5 {
+  animation-delay: .7s;
+}
+
+.delay-6 {
+  animation-delay: .9s;
+}
+
+
+
+/* SCROLL-TRIGGERED ANIMATION */
+
+/* FIX SCROLL BAR ON ALL SCROLL ANIMATION SECTIONS */
+section:has(.observe-me) {
+  overflow-x: clip;
+}
+
+/* on scroll slide-in from the left */
+.observe-me.onscroll-slide-in-from-left {
+
+  /* Simple way */
+  opacity: 0;
+  translate: -20px 0;
+  transition: all .5s ease-out .2s;
+
+  /* Complicated way */
+  /* --duration: .5s;
+  --delay: .2s;
+  opacity: 0;
+  translate: -20px 0;
+  transition: 
+      translate var(--duration) ease-out var(--delay), 
+      opacity var(--duration) linear var(--delay); */
+
+}
+
+.observe-me[data-viewstate="active"].onscroll-slide-in-from-left {
+  opacity: 1;
+  translate: 0 0;
+}
+
+/* on scroll slide-in from the right */
+.observe-me.onscroll-slide-in-from-right {
+  opacity: 0;
+  translate: 20px 0;
+  transition: all .5s ease-out .2s;
+}
+
+.observe-me[data-viewstate="active"].onscroll-slide-in-from-right {
+  opacity: 1;
+  translate: 0 0;
+}
+
+.observe-me.delay-0 {
+  transition-delay: 0s;
+}
+
+.observe-me.delay-1 {
+  transition-delay: 0.1s;
+}
+
+.observe-me.delay-2 {
+  transition-delay: 0.2s;
+}
+
+.observe-me.delay-3 {
+  transition-delay: 0.3s;
+}
+
+.observe-me.delay-4 {
+  transition-delay: 0.5s;
+}
+
+.observe-me.delay-5 {
+  transition-delay: 0.7s;
+}
+
+.observe-me.delay-6 {
+  transition-delay: 0.9s;
+}
+
+
+/* CARDS */
+
+.cards-list {
+  z-index: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 30px auto;
+  width: 300px;
+  height: 300px;
+  border-radius: 40px;
+  box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25), -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.card .card_image {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+}
+
+.card .card_image img {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+  object-fit: cover;
+}
+
+.card .card_title {
+  text-align: center;
+  border-radius: 0px 0px 40px 40px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: -80px;
+  height: 40px;
+}
+
+.card:hover {
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25),
+    -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
+}
+
+.title-white {
+  color: white;
+}
+
+.title-black {
+  color: black;
+}
+
+@media all and (max-width: 500px) {
+  .card-list {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
+}
