@@ -1,2 +1,2 @@
-# jkc_wellness
+# jkcwellness
 JKC Wellness website
