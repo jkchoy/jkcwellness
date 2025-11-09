@@ -60,6 +60,7 @@ TABLE OF CONTENTS
 
   /* main blue */
   --color-blue-900: #043170;
+  --color-blue-950: #042854;
 
   /* light background boxes & title heading box*/
   --color-gray-100: #F2F2F2;
@@ -749,7 +750,7 @@ section {
   text-decoration: none;
   border-radius: var(--border-radius);
   line-height: 1;
-
+  text-transform: uppercase;
 }
 
 .button:hover {
@@ -763,14 +764,15 @@ section {
   display: inline-block;
   padding: var(--unit-s);
   border-radius: var(--border-radius);
+  text-transform: uppercase;
 }
 
-.color-swatch {
+/* .color-swatch {
   --_swatch-color: grey;
   background-color: var(--_swatch-color);
   width: 150px;
   height: 150px;
-}
+} */
 
 /* HR */
 hr {
@@ -1116,74 +1118,27 @@ section:has(.observe-me) {
   color: var(--color-white);
 }
 
-/* CARDS */
+/* SERVICES CARDS */
 
-.cards-list {
-  z-index: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
 
 .card {
-  margin: 30px auto;
-  width: 300px;
-  height: 300px;
-  border-radius: 40px;
-  box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25), -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
+  box-shadow: 5px 5px 30px 7px rgba(84, 83, 83, 0.25);
   cursor: pointer;
   transition: 0.4s;
-}
 
-.card .card_image {
-  width: inherit;
-  height: inherit;
-  border-radius: 40px;
-}
-
-.card .card_image img {
-  width: inherit;
-  height: inherit;
-  border-radius: 40px;
-  object-fit: cover;
-}
-
-.card .card_title {
-  text-align: center;
-  border-radius: 0px 0px 40px 40px;
-  font-family: sans-serif;
-  font-weight: bold;
-  font-size: 30px;
-  margin-top: -80px;
-  height: 40px;
-}
-
-.card:hover {
-  transform: scale(0.9, 0.9);
-  box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25),
-    -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
-}
-
-.title-white {
-  color: white;
-}
-
-.title-black {
-  color: black;
-}
-
-@media all and (max-width: 500px) {
-  .card-list {
-    /* On small screens, we are no longer using row direction but column */
-    flex-direction: column;
-  }
 }
 
 
 /* CUSTOME BOX LAYOUT */
 
-/* LAYOUT 1 */
+.box-layout {
+  background: pink;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+}
+
+/* LAYOUT 1 my story*/
 .box-layout-1 {
   .box-text {
     grid-column: 7 / 12;
@@ -1218,11 +1173,11 @@ section:has(.observe-me) {
 
 
 
-/* LAYOUT 2 */
+/* LAYOUT 2 polices */
 
 .box-layout-2 {
   .box-text {
-    grid-column: 2 / 7;
+    grid-column: 2 / 9;
     grid-row: 3 / 6;
     z-index: 60;
   }
@@ -1252,10 +1207,10 @@ section:has(.observe-me) {
   }
 }
 
-/* LAYOUT 3 */
+/* LAYOUT 3 services*/
 .box-layout-3 {
   .box-text {
-    grid-column: 7 / 12;
+    grid-column: 5 / 12;
     grid-row: 3 / 6;
     z-index: 60;
   }
@@ -1285,7 +1240,7 @@ section:has(.observe-me) {
   }
 }
 
-/* LAYOUT 4 */
+/* LAYOUT 4 contact*/
 .box-layout-4 {
   .box-text {
     grid-column: 2 / 8;
@@ -1319,13 +1274,6 @@ section:has(.observe-me) {
 }
 
 
-.box-layout,
-.box-layout-2 {
-  /*   background: pink; */
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(12, 1fr);
-}
 
 .box-image {
   img {
@@ -1390,6 +1338,7 @@ section:has(.observe-me) {
   }
 }
 
+
 /* RESPONSIVE NAV - UNDERLINE */
 
 .topnav {
@@ -1410,9 +1359,67 @@ section:has(.observe-me) {
 }
 
 .topnav a:hover {
-  border-bottom: 3px solid var(--color-blue-900);
+  border-bottom: 3px solid var(--color-links);
 }
 
 .topnav a.active {
-  border-bottom: 3px solid var(--color-gold-400);
+  border-bottom: 3px solid var(--color-links-hover);
+}
+
+
+/* CARDS HOVER */
+.image-hover {
+  position: relative;
+  width: 100%;
+}
+
+/* .image {
+  display: block;
+  width: 100%;
+  height: auto;
+} */
+
+.overlay {
+  position: absolute;
+  /* padding-bottom: 1em; */
+  bottom: 0;
+  background: #fff;
+  right: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .4s ease;
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  font-size: .7em;
+  text-align: center;
+
+}
+
+.overlay a {
+  text-decoration: none;
+}
+
+.overlay h4 {
+  color: var(--color-links);
+}
+
+
+.overlay h4:hover {
+  color: var(--color-links-hover);
+}
+
+.image-hover:hover .overlay {
+  opacity: 4;
+}
+
+
+.icon-treatment {
+  text-transform: uppercase;
+}
+
+.icon-treatment {
+  align-items: center;
 }

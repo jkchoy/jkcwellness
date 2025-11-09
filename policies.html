@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>JKC Wellness</title>
+  <meta name="description" content="A simple HTML CSS and JS starter base">
+
+  <!-- MAIN CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+    rel="stylesheet">
+
+
+
+</head>
+
+<body>
+
+  <header class="site-header on-top-of-hero">
+
+    <div class="logo">
+
+      <!-- INLINE SVG LOGO -->
+      <!-- <a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+          <path class="cls-1"
+            d="M364.57,204.52c-29.76.58-62.74-11.59-82.67-56.1-16.6-37.08-10.99-65.39.14-93.48,14.61-36.89,42.9-53.33,41.98-53.79-11.2-5.66-71.92,8.93-103.8,57.51,13.58-25.61,25.25-37.13,25.25-37.36-2.52-.09-112.14.83-118.6,2.26-.01.06-.01.13-.02.2-.16-.07-.24-.1-.24-.11.05-.03.13-.06.26-.09.07-.55.1-.83.11-.83s1.64-20.29,1.6-20.29c-28.73,2.9-54.04,4.66-83.28,7.47,2.43,4.72,3.63,2.78,6.54,12.09,3.5,38.5.29,96.01.26,99.91-.27,35.27,2.62,31.96-2.05,118.17-1.85,34.07-31.18,50.74-50.05,72.48,7.23.21,68.85-5.3,102.14-36.1,17.55-16.24,22.48-34.37,23.31-43.22,1.41-15.06-.19-35.51-1.4-56,5.26,7.27,10.47,15.76,14.66,25.19,12.71,28.66,18.59,65.56,19.69,79.15.05.68,91.73,48.21,98.36,48.04.79-.02-19.82-40.99-24.55-60.89-3.72-15.63-7.21-47.11-15.52-71.84,26.62,49.4,86.85,72.78,144.86,60.31,54.28-11.68,76.89-53.54,88.39-77.74,1.89-3.98-58.25,24.54-85.37,25.06ZM143.06,90.49c-5.24,10.83-12.76,21.84-20.11,31.41.05-15.77.2-31.25.59-46.43,1.07-30.36,2.82-47.47,3.31-51.7,3.2,1.37,40.32,16.89,16.21,66.72ZM161.5,135.17c2.52-5.12,22.55-9.24,47.28-54.15-9.05,23.66-11.55,53.22-2.29,89.61.71,2.8,1.52,5.54,2.41,8.22-19.13-34.81-47.4-43.46-47.4-43.68Z"
+            style="fill:#39393c" />
+        </svg></a>
+      <span class="visually-hidden">JKC Wellness Logo</span> -->
+
+      <!-- INLINE IMG LOGO -->
+      <a href="index.html"><img src="images-jkc/jkc-82c8d1-horizontal.png" alt="simple base logo" width="190"
+          height="50"></a>
+      <h1 class="visually-hidden"><a href="index.html">Simple Base</a></h1>
+    </div>
+
+    <nav class="site-nav">
+      <button class="menubutton">
+        <span class="visually-hidden">menu</span>
+        <svg class="simple-navicon" width="24" height="21">
+          <rect class="simple-navicon-top" x="0" y="2" height="3" width="30"></rect>
+          <rect class="simple-navicon-middle" x="0" y="9" height="3" width="30"></rect>
+          <rect class="simple-navicon-bottom" x="0" y="16" height="3" width="30"></rect>
+        </svg>
+      </button>
+      <ul>
+        <div class="topnav">
+          <li><a href="index.html" class="active">Home</a></li>
+        </div>
+        <!-- <li><a href="#">My Craft</a></li> -->
+        <div class="dropdown">
+          <button class="dropbtn">Crafted Services
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Massage Therapy</a>
+            <a href="#">Cupping Therapy</a>
+            <a href="#">Ear Seeds</a>
+            <a href="#">Waxing</a>
+          </div>
+        </div>
+        <li><a href="#">My Story</a></li>
+        <li><a href="#">Let's Connect</a></li>
+        <li><a href="#">The Policies</a></li>
+
+        <!-- <li><a href="styleguide.html">Style Guide</a></li> -->
+      </ul>
+    </nav>
+
+
+  </header>
+
+  <main class="site-main">
+
+    <section class="hero text-centered">
+
+      <h1 class="slide-from-top-and-fade-in delay-0">JKC Wellness</h1>
+      <h2 class="slide-from-top-and-fade-in delay-1">Home Page Subheader</h2>
+      <p class="slide-from-top-and-fade-in delay-2">This is the framework for my NMA website redesign project for ART
+        258.</p>
+      <a href="#features" class="button scale-from-top-and-fade-in delay-3">Schedule Your Appointment</a>
+
+    </section>
+
+    <section id="features">
+      <div class="container">
+        <div class="row">
+          <div class="one-fourth">
+            <div class="card">
+              <div class="image-hover">
+                <p>Massage
+                </p>
+                <a href="#"><img src="../jkcwellness/images-jkc/massage-card-illustration-dkblue.png"
+                    alt="illustration of massage" width="600" height="600"></a>
+                <div class="overlay">
+
+                  <a href="#"><img src="../jkcwellness/images-jkc/massage-card-illustration-dkblue.png"
+                      alt="back of book cover triology" width="600" height="600">
+
+                    <h4>The Tapeworm Is In
+                      <br>
+                      Book Cover Triology
+                    </h4>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="one-fourth">
+            <div class="card">
+              <div class="image-hover">
+                <p>Cupping
+                </p>
+                <img src="../jkcwellness/images-jkc/cupping-card-illustration.png" alt="illustration of cupping massage"
+                  width="600" height="600">
+                <div class="overlay">
+
+                  <a href="#"><img src="../jkcwellness/images-jkc/cupping-card-illustration-dkblue.png"
+                      alt="back of book cover triology" width="600" height="600">
+
+                    <h4>The Tapeworm Is In
+                      <br>
+                      Book Cover Triology
+                    </h4>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="one-fourth">
+            <div class="card">
+              <div class="image-hover">
+                <p>Ear seeds
+                </p>
+                <img src="../jkcwellness/images-jkc/ear-card-illustration-dkblue.png"
+                  alt="illustration of an ear with ear seeds" width="100" height="100">
+
+                <div class="overlay">
+
+                  <a href="#"><img src="../jkcwellness/images-jkc/ear-card-illustration-dkblue.png"
+                      alt="back of book cover triology" width="100" height="100">
+
+                    <h4>The Tapeworm Is In
+                      <br>
+                      Book Cover Triology
+                    </h4>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="one-fourth">
+            <div class="card">
+              <p>waxing</p>
+              <div class="image-hover">
+                <img src="../jkcwellness/images-jkc/wax-card-illustration-dkblue.png" alt="illustration of a wax pot"
+                  width="150" height="150">
+
+                <div class="overlay">
+
+                  <a href="#"><img src="../jkcwellness/images-jkc/wax-card-illustration-dkblue.png"
+                      alt="back of book cover triology" width="150" height="150">
+
+                    <h4>The Tapeworm Is In
+                      <br>
+                      Book Cover Triology
+                    </h4>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+
+    <!-- LAYOUT 1 my story-->
+    <section>
+      <div class="container">
+
+
+        <div class="box-layout box-layout-1">
+
+          <div class="box-text observe-me onscroll-slide-in-from-right delay-5">
+            <div class="jkc-eyebrow">how i ended up doing this</div>
+            <h2 class="jkc-headline">My <span class="jkc-headline-gold">Story</span></h2>
+            <p>Owning my own business was never my dream, but I'm glad started and would never go back.</p>
+            <p>I'm a UX/UI designer/developer and a graphic designer. I like coding. Does it go with Massage Therapy &
+              Cosmetology? NO. But, also yes. I have my reasons.</p>
+            <a href="#features" class="button">unlock my story</a>
+          </div>
+
+          <div class="box-image observe-me onscroll-slide-in-from-left">
+            <img src="https://placehold.co/1000x1000" alt="place holder">
+          </div>
+
+          <div class="box-tan observe-me onscroll-slide-in-from-left"></div>
+          <div class="box-blue observe-me onscroll-slide-in-from-right delay-4"></div>
+          <div class="box-outline observe-me onscroll-slide-in-from-right delay-6"></div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- LAYOUT 2 policies-->
+    <section>
+      <div class="container">
+
+        <div class="box-layout box-layout-2">
+
+          <div class="box-text observe-me onscroll-slide-in-from-right delay-5">
+            <div class="jkc-eyebrow">what you should know before your visit</div>
+            <h2 class="jkc-headline">Policies <span class="jkc-headline-gold">&</span> Guidelines</h2>
+
+
+            <!-- 10 min -->
+            <div class="row">
+              <div class="one-half column">
+                <div class="observe-me from-right">
+                  <img src="../jkcwellness/images-jkc/10mins-line-illustrations-dkblue.png" alt="icon of 10 minutes"
+                    width="100" height="100">
+                </div>
+
+                <div class="one-half column">
+                  <p>Arrive 10 minutes early</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- $ -->
+            <div class="row">
+              <div class="one-half column">
+                <img src="../jkcwellness/images-jkc/$-line-illustration.png" alt="icon of $ sign" width="100"
+                  height="100">
+
+              </div>
+              <div class="one-half column">
+                <p>Full service charge for no-call or no-shows </p>
+              </div>
+            </div>
+
+            <!-- no kids -->
+            <div class="row">
+              <div class="one-half column">
+                <img src="../jkcwellness/images-jkc/nokids-line-illustration-dkblue.png" alt="icon of $ sign"
+                  width="100" height="100">
+              </div>
+              <div class="one-half column">
+                <p>No kid(s). Unless it's their appointment.</p>
+              </div>
+            </div>
+
+
+
+
+            <a href="#features" class="button">What You Need To Know</a>
+
+          </div>
+          <div class="box-image observe-me onscroll-slide-in-from-left">
+            <img src="https://placehold.co/1000x1000" alt="place holder">
+          </div>
+
+          <div class="box-tan observe-me onscroll-slide-in-from-left"></div>
+          <div class="box-blue observe-me onscroll-slide-in-from-right delay-4"></div>
+          <div class="box-outline observe-me onscroll-slide-in-from-right delay-6"></div>
+
+        </div>
+      </div>
+
+
+    </section>
+
+
+    <!-- LAYOUT3 sevices-->
+    <section>
+      <div class="container">
+
+        <div class="box-layout box-layout-3">
+
+          <div class="box-text observe-me onscroll-slide-in-from-right delay-5">
+            <div class="jkc-eyebrow">holistic treatments tailored to you</div>
+            <h2 class="jkc-headline">Crafted <span class="jkc-headline-gold">Treatments</span></h2>
+            <br><br>
+            <div class="row">
+              <div class="one-half column">
+                <a href="#">
+                  <img src="../jkcwellness/images-jkc/massage-card-illustration-dkblue.png"
+                    alt="illustration of an ear with ear seeds" width="200" height="100">
+                  <p>massage therapy</p>
+                </a>
+              </div>
+
+              <div class="one-half column">
+                <a href="#">
+                  <img src="../jkcwellness/images-jkc/cupping-card-illustration-dkblue.png"
+                    alt="illustration of a wax pot" width="200" height="300">
+                  <p>cupping therapy</p>
+                </a>
+              </div>
+
+            </div>
+
+            <div class="row">
+              <div class="one-half column">
+                <a href="#">
+                  <img src="../jkcwellness/images-jkc/ear-card-illustration-dkblue.png"
+                    alt="illustration of an ear with ear seeds" width="100" height="100">
+                  <p>ear seeds</p>
+                </a>
+              </div>
+
+              <div class="one-half column">
+                <a href="">
+                  <img src="../jkcwellness/images-jkc/wax-card-illustration-dkblue.png" alt="illustration of a wax pot"
+                    width="100" height="100">
+                  <p>waxing</p>
+                </a>
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="box-image observe-me onscroll-slide-in-from-left">
+            <img src="https://placehold.co/1000x1000" alt="place holder">
+          </div>
+
+          <div class="box-tan observe-me onscroll-slide-in-from-left"></div>
+          <div class="box-blue observe-me onscroll-slide-in-from-right delay-4"></div>
+          <div class="box-outline observe-me onscroll-slide-in-from-right delay-6"></div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- LAYOUT4 contact-->
+    <section>
+      <div class="container">
+
+        <div class="box-layout box-layout-4">
+
+          <div class="box-text observe-me onscroll-slide-in-from-right delay-5">
+            <div class="jkc-eyebrow">ready when you are</div>
+            <h2 class="jkc-headline">Let's <span class="jkc-headline-gold">Connect</span></h2>
+            <p>650 Iwilei Road #165 <br>
+              Honolulu, HI 96817 <br>
+              (located inside Dole Cannery, next to Costco)</p>
+            <p>Text <strong><a href="sms:18083913429">+1 (808) 391-3429</a></strong> or <a
+                href="mailto:jkcwellness@gmail.com">Email
+                Me</a><br>
+              (if you call— give me 24-48 hours to call back)</p>
+            <p>Questions about parking & my exact location <br>
+              —click the button</p>
+
+            <a href="#features" class="button">Get in touch & don't lost</a>
+          </div>
+
+          <div class="box-image observe-me onscroll-slide-in-from-left">
+            <img src="https://placehold.co/1000x1000" alt="place holder">
+          </div>
+
+          <div class="box-tan observe-me onscroll-slide-in-from-left"></div>
+          <div class="box-blue observe-me onscroll-slide-in-from-right delay-4"></div>
+          <div class="box-outline observe-me onscroll-slide-in-from-right delay-6"></div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-6">
+          <h2>About Simple Base</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident necessitatibus quod quae quasi officiis
+            assumenda natus quis error, iste quo?</p>
+        </div>
+        <div class="col-3 push-9">
+          <h2>Pages</h2>
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="styleguide.html">Style Guide</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+
+    </div>
+  </footer>
+
+
+
+
+  <!-- MAIN JS -->
+  <script src="js/script.js"></script>
+
+
+</body>
+
+</html>
