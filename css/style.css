@@ -1122,7 +1122,7 @@ section:has(.observe-me) {
 
 
 .card {
-  box-shadow: 5px 5px 30px 7px rgba(84, 83, 83, 0.25);
+  box-shadow: 0 0 15px 7px rgba(84, 83, 83, 0.25);
   cursor: pointer;
   transition: 0.4s;
 
@@ -1422,4 +1422,21 @@ section:has(.observe-me) {
 
 .icon-treatment {
   align-items: center;
+}
+
+/* INSTAGRAM */
+.boxes2 {
+  height: 212px;
+  width: 316px;
+}
+
+#new img {
+  max-width: none !important;
+  background: none !important
+}
+
+#iframe {
+  max-height: none !important;
+  max-width: none !important;
+  background: none !important
 }
