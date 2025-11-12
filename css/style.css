@@ -761,11 +761,13 @@ section {
 
 /* CARDS */
 .card {
+  background-color: var(--color-white);
   border: var(--border-thickness) solid var(--color-border);
   display: inline-block;
   padding: var(--unit-s);
   border-radius: var(--border-radius);
   text-transform: uppercase;
+  border: 1px solid red;
 }
 
 /* .color-swatch {
@@ -1127,7 +1129,7 @@ section:has(.observe-me) {
 
 .jkc-headline-hero {
   color: var(--color-gold-400);
-  font-size: var(--unit-xl);
+  font-size: var(--unit-2xl);
   text-transform: uppercase;
   line-height: 1.1;
   border: 1px solid green;
@@ -1135,7 +1137,7 @@ section:has(.observe-me) {
 
 .jkc-headline-hero-white {
   color: var(--color-white);
-  font-size: var(--unit-xl);
+  font-size: var(--unit-2xl);
   /* margin-block: var(--unit-s); */
   line-height: 1.1;
   text-transform: uppercase;
@@ -1594,8 +1596,15 @@ section:has(.observe-me) {
 
 
 /* ------ MASSAGE PAGE ------ */
-.text-treatment {
+.treatment-headline {
   font-size: var(--unit-l);
+  margin-block: var(--unit-m);
+  text-transform: uppercase;
+}
+
+
+.text-treatment {
+  font-size: var(--unit-xl);
   margin-block: var(--unit-xl);
   text-transform: uppercase;
   border: 6px sold brown;
@@ -1612,7 +1621,7 @@ section:has(.observe-me) {
 
 /* CUSTOM MASSAGE */
 .massage-title {
-  grid-column: 2 / 7;
+  grid-column: 2 / 8;
   grid-row: 1 / 1;
   /* border: 3px solid purple; */
 }
@@ -1663,7 +1672,7 @@ section:has(.observe-me) {
 } */
 
 .prenatal-title {
-  grid-column: 7 / 12;
+  grid-column: 6 / 12;
   grid-row: 1 / 1;
   border: 1px solid purple;
 }
@@ -1715,19 +1724,11 @@ section:has(.observe-me) {
 
 /* FOOT REFLEXOLOGY */
 
-.text-treatment-f {
-  font-size: var(--unit-l);
-  margin-block: var(--unit-2xl);
-  text-transform: uppercase;
-  grid-column: 2 / 8;
+.reflexology-title {
+  grid-column: 3 / 12;
   grid-row: 1 / 1;
+  border: 1px solid purple;
 }
-
-/* .underline {
-  padding-right: .5em;
-  padding-left: .5em;
-  box-shadow: inset 0 -0.55em 0 var(--color-gray-100);
-} */
 
 .btn-treatment {
   margin-top: 2em;
@@ -1769,20 +1770,12 @@ section:has(.observe-me) {
   text-transform: uppercase;
 }
 
-.text-treatment-c {
-  font-size: var(--unit-l);
-  margin-block: var(--unit-2xl);
-  text-transform: uppercase;
-  grid-column: 7 / 12;
+.body-cupping-title {
+  grid-column: 5 / 13;
   grid-row: 1 / 1;
+  /* border: 1px solid purple; */
 
 }
-
-/* .underline {
-  padding-right: .5em;
-  padding-left: .5em;
-  box-shadow: inset 0 -0.55em 0 var(--color-gray-100);
-} */
 
 .btn-treatment {
   margin-top: 2em;
@@ -1795,20 +1788,21 @@ section:has(.observe-me) {
   border: 1px solid red;
 }
 
+/* first section */
 .box-layout-8 {
 
   border: 1px solid green;
 
   .box-text {
     grid-column: 7 / 13;
-    grid-row: 2 / 5;
+    grid-row: 2 / 6;
     z-index: 60;
     border: 1px solid hotpink;
   }
 
   .box-image {
     grid-column: 2 / 8;
-    grid-row: 2 / 6;
+    grid-row: 2 / 5;
     z-index: 50;
   }
 
@@ -1821,21 +1815,169 @@ section:has(.observe-me) {
 }
 
 .box-text-cup-explain {
-  grid-column: 2 / 9;
-  grid-row: 6 / 8;
+  grid-column: 2 / 8;
+  grid-row: 7 / 11;
   z-index: 60;
   border: 1px solid orange;
 }
 
-.box-image-2 {
+.box-image-cupping-legs {
   grid-column: 5 / 13;
-  grid-row: 7 / 13;
+  grid-row: 8 / 13;
   z-index: 50;
 }
 
-.cupping-helps {
-  border: 1px solid blue;
-  grid-column: 2 / 9;
-  grid-row: 6 / 8;
-  z-index: 60;
+
+/* second section */
+.box-image-cupping-stomach {
+  grid-column: 1 / 7;
+  grid-row: 8 / 13;
+  z-index: 50;
+}
+
+.box-layout-9 {
+
+  border: 1px solid green;
+
+  .box-text {
+    grid-column: 7 / 13;
+    grid-row: 2 / 6;
+    z-index: 60;
+    border: 1px solid hotpink;
+  }
+
+  .box-image {
+    grid-column: 2 / 8;
+    grid-row: 2 / 5;
+    z-index: 50;
+  }
+
+  .box-blue {
+    grid-column: 1 / 11;
+    grid-row: 3 / 9;
+    z-index: 30;
+  }
+
+  .cupping-not-bruise {
+    grid: 1 / 9;
+    grid-row: 11 / 12;
+    z-index: 60;
+    background-color: orange;
+  }
+
+  .cupping-conditions {
+    grid-column: 2 / 9;
+    grid-row: 1 / 6;
+    z-index: 60;
+    background-color: lightblue;
+  }
+
+  .box-image-cupping-arm {
+    grid-column: 6 / 13;
+    grid-row: 1 / 6;
+    z-index: 50;
+  }
+
+  .cupping-helps {
+    background-color: pink;
+    grid-column: 1 / 7;
+    grid-row: 7 / 10;
+    z-index: 60;
+  }
+}
+
+.box-text-swiper {
+  text-align: center;
+}
+
+.box-blue-swiper {}
+
+
+.swiper-blue-box {
+  background-color: var(--color-blue-900);
+  /* padding: var(--unit-xl);
+  border-radius: var(--border-radius); */
+}
+
+.swiper-cup-card {
+  background-color: var(--color-gray-100);
+  padding: var(--unit-s);
+  border-radius: var(--border-radius);
+  border: 1px solid green;
+}
+
+.jkc-eyebrow-card-swiper {
+  color: var(--color-gold-400);
+  text-align: left;
+  text-transform: none;
+}
+
+.jkc-headline-card-swiper {
+  color: var(--color-primary-dark);
+  text-align: left;
+  font-size: 2rem;
+  margin-block: var(--unit-xs);
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.jkc-card-swiper-text {
+  text-align: left;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-transform: none;
+}
+
+
+/* LAYOUT 10 FACIAL CUPPING */
+
+.box-layout-10 {
+
+  border: 1px solid green;
+
+  .box-text {
+    grid-column: 7 / 13;
+    grid-row: 2 / 6;
+    z-index: 60;
+    border: 1px solid hotpink;
+  }
+
+  .box-image {
+    grid-column: 2 / 8;
+    grid-row: 2 / 5;
+    z-index: 50;
+  }
+
+  .box-blue {
+    grid-column: 1 / 11;
+    grid-row: 3 / 9;
+    z-index: 30;
+  }
+
+  .cupping-not-bruise {
+    grid: 1 / 9;
+    grid-row: 11 / 12;
+    z-index: 60;
+    background-color: orange;
+  }
+
+  .cupping-conditions {
+    grid-column: 2 / 9;
+    grid-row: 1 / 6;
+    z-index: 60;
+    background-color: lightblue;
+  }
+
+  .box-image-cupping-arm {
+    grid-column: 6 / 13;
+    grid-row: 1 / 6;
+    z-index: 50;
+  }
+
+  .cupping-helps {
+    background-color: pink;
+    grid-column: 1 / 7;
+    grid-row: 7 / 10;
+    z-index: 60;
+  }
 }
