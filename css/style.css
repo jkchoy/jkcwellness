@@ -776,7 +776,7 @@ section {
   padding: var(--unit-s);
   border-radius: var(--border-radius);
   text-transform: uppercase;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 /* .color-swatch {
@@ -1342,7 +1342,8 @@ section:has(.observe-me) {
 
 /* FEATURES CARDS*/
 #features .card {
-  box-shadow: none;
+  box-shadow: 0 0 15px 7px rgba(84, 83, 83, 0.25);
+  /* border: 1px solid red; */
 
   .image-hover {
     aspect-ratio: 1;
@@ -1366,10 +1367,19 @@ section:has(.observe-me) {
   /* background: pink; */
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
   /* grid-template-rows: repeat(12, 1fr minmax(2em, auto)); */
-  grid-template-rows: repeat(auto-fit, minmax(min(75px, 100%), 1fr));
+  /* grid-template-rows: repeat(auto-fit, minmax(min(75px, 100%), 1fr)); */
 
 }
+
+.box-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
 
 /* LAYOUT 1 my story*/
 .box-layout-1 {
@@ -1388,7 +1398,7 @@ section:has(.observe-me) {
 
   .box-blue {
     grid-column: 4 / 13;
-    grid-row: 1 / 11;
+    grid-row: 1 / 9;
     z-index: 30;
   }
 
@@ -1400,17 +1410,22 @@ section:has(.observe-me) {
 
   .box-outline {
     grid-column: 5 / 11;
-    grid-row: 2 / 10;
+    grid-row: 2 / 11;
     z-index: 40;
+    /* border: 1px solid red; */
   }
 }
 
 /* LAYOUT 2 polices */
 
 .box-layout-2 {
+
+
+  /* grid-template-rows: repeat(12, 95px); */
+
   .box-text {
-    grid-column: 2 / 7;
-    grid-row: 3 / 8;
+    grid-column: 2 / 8;
+    grid-row: 3 / 9;
     z-index: 60;
   }
 
@@ -1437,6 +1452,12 @@ section:has(.observe-me) {
     grid-row: 1 / 12;
     z-index: 40;
   }
+
+}
+
+.feature-row {
+  display: flex;
+  gap: var(--unit-l);
 }
 
 /* LAYOUT 3 */
@@ -1507,7 +1528,7 @@ section:has(.observe-me) {
     grid-column: 2 / 12;
     grid-row: 1 / 10;
     z-index: 40;
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
 }
 
@@ -1655,6 +1676,19 @@ section:has(.observe-me) {
 
 
 /* CUSTOM MASSAGE */
+.box-layout-massage-page {
+  /* background: pink; */
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  /* grid-template-rows: repeat(12, auto-fit); */
+  grid-template-rows: repeat(12, minmax(4em, 8vh));
+  /* grid-template-rows: repeat(12, 1fr minmax(2em, auto)); */
+  /* grid-template-rows: repeat(auto-fit, minmax(min(75px, 100px), 1fr)); */
+
+}
+
+
+
 .massage-title {
   grid-column: 2 / 8;
   grid-row: 1 / 1;
@@ -1677,25 +1711,32 @@ section:has(.observe-me) {
 
   .box-text {
     grid-column: 7 / 13;
-    grid-row: 4 / 6;
+    grid-row: 7 / 13;
     z-index: 60;
     border: 1px solid green;
   }
 
   .box-image {
-    grid-column: 2 / 12;
-    grid-row: 2 / 4;
+    grid-column: 2 / 10;
+    grid-row: 3 / 10;
     z-index: 50;
   }
 
   .box-blue {
     grid-column: 1 / 9;
-    grid-row: 3 / 5;
+    grid-row: 4 / 12;
     z-index: 30;
   }
 
+  .massage-illustration {
+    grid-column: 9 / 13;
+    grid-row: 1 / 4;
+    z-index: 70;
+    rotate: 10deg;
 
+  }
 }
+
 
 
 /* PRENATAL */
@@ -1705,6 +1746,8 @@ section:has(.observe-me) {
   text-transform: uppercase;
   
 } */
+
+
 
 .prenatal-title {
   grid-column: 6 / 12;
@@ -1750,6 +1793,13 @@ section:has(.observe-me) {
     z-index: 30;
   }
 
+  .prenatal-illustration {
+    grid-column: 1 / 5;
+    grid-row: 1 / 4;
+    z-index: 70;
+
+  }
+
 }
 
 .eyebrow-sub {
@@ -1793,6 +1843,14 @@ section:has(.observe-me) {
     grid-column: 1 / 9;
     grid-row: 3 / 11;
     z-index: 30;
+  }
+
+  .foot-illustration {
+    grid-column: 9 / 13;
+    grid-row: 1 / 4;
+    z-index: 70;
+    rotate: 25deg;
+
   }
 
 }
