@@ -2539,8 +2539,8 @@ section:has(.observe-me) {
     }
 
     .box-text.cupping-not-bruise {
-      grid-column: 1 / 8;
-      grid-row: 1 / 4;
+      grid-column: 2 / 8;
+      grid-row: 2 / 4;
       z-index: 60;
       box-shadow: 0 0 15px 7px rgba(84, 83, 83, 0.25);
     }
@@ -2566,31 +2566,33 @@ section:has(.observe-me) {
       box-shadow: 0 0 15px 7px rgba(84, 83, 83, 0.25);
     }
 
-
-    .jkc-headline.cups-help {
-      font-size: 1.8em;
-      text-align: center;
-    }
-
-    .jkc-headline-gold.cups-help {
-      font-size: 1em;
-    }
-
-    .box-text.cups-help-list {
-      margin-left: 0;
-      padding: 0%;
-      border: 1px solid red;
-    }
-
     .hemofire-illustration,
     .aircup-illustration,
-    .glasscup-illustration,
-    .aircup-illustration2,
-    .warning-illustration,
-    .siliconecup-illustration {
+    .glasscup-illustration {
       display: none;
     }
 
+    .aircup-illustration2 {
+      grid-column: 7 / 9;
+      grid-row: 2 / 4;
+      z-index: 90;
+    }
 
+    .warning-illustration {
+      display: none;
+    }
+
+    .siliconecup-illustration {
+      grid-column: 3 / 5;
+      grid-row: 7 / 9;
+      z-index: 90;
+      rotate: -10deg;
+
+      img {
+        opacity: .2;
+      }
+    }
   }
+
+
 }
