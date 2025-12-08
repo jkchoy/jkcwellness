@@ -524,7 +524,7 @@ html {
   font-size: 16px;
   border: none;
   outline: none;
-  color: var(--color-siteheader-links);
+  color: var(--color-white);
   padding: 14px 16px;
   background-color: inherit;
   font-family: inherit;
@@ -533,13 +533,13 @@ html {
 
 /* .navbar a:hover, */
 .dropdown:hover .dropbtn {
-  background-color: var(--color-gray-200);
+  background-color: var(--color-blue-900);
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: var(--color-blue-900);
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -557,7 +557,8 @@ html {
 }
 
 .dropdown-content a:hover {
-  background-color: var(--color-gray-100);
+  background-color: transparent;
+  color: var(--color-gold-400);
 }
 
 .dropdown:hover .dropdown-content {
@@ -576,7 +577,7 @@ html {
 
 .site-nav a,
 .dropbtn {
-  color: var(--color-siteheader-links);
+  color: var(--color-white);
   text-decoration: none;
   font-weight: bold;
   display: block;
@@ -1110,6 +1111,69 @@ section:has(.observe-me) {
 
 /* -----------JKC WELLNESS------------- */
 
+.site-header.jkc {
+  position: absolute;
+  width: 100%;
+  background-color: transparent;
+  z-index: 10;
+}
+
+.hero {
+  background-image: url('../images-jkc/jkc-treatment-room.jpg');
+  background-size: cover;
+  background-position: 50% 50%;
+  position: relative;
+  /* padding: 4em 1em 1em 1em; */
+  /* text-align: center; */
+  /* min-height: 100svh; */
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(8, 80px);
+  /* gap: 1vh; */
+}
+
+
+.hero-content.container {
+  background-color: transparent;
+  padding: var(--unit-l);
+  z-index: 60;
+  text-align: center;
+  border: 1px solid var(--color-white);
+  border-radius: var(--border-radius);
+  color: var(--color-white);
+  grid-column: 2 / 8;
+  grid-row: 4 / 13;
+}
+
+.jkc-eyebrow-hero.container {
+  align-items: center;
+  position: relative;
+  margin-top: -16%;
+  background-color: var(--color-white);
+  z-index: 60;
+  border-radius: var(--border-radius);
+  opacity: .2;
+  /* border: 1px solid white; */
+
+}
+
+.hero-title,
+.hero-subtitle {
+  padding-top: 2em;
+  align-items: center;
+  position: relative;
+  color: var(--color-white);
+  text-transform: uppercase;
+}
+
+.button.main {
+  align-items: center;
+  /* display: block; */
+  position: relative;
+  background-color: var(--color-gold-400);
+}
+
+
 /* HERO CONTENT  */
 
 .hero-subpage {
@@ -1291,7 +1355,7 @@ section:has(.observe-me) {
 .topnav a {
   float: left;
   display: block;
-  color: var(--color-black);
+  color: var(--color-white);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
