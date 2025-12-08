@@ -2837,14 +2837,6 @@ section:has(.observe-me) {
       img {
         opacity: .6;
       }
-    }
-
-
-    .poi-facial-cup-illustration2 {
-      grid-column: 3 / 5;
-      grid-row: 15 / 18;
-      z-index: 90;
-      rotate: -10deg;
 
       img {
         opacity: .6;
