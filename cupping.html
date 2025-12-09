@@ -8,14 +8,20 @@
   <title>JKC Wellness | CUPPING THERAPY</title>
   <meta name="description" content="A simple HTML CSS and JS starter base">
 
-  <!-- MAIN CSS -->
-  <link rel="stylesheet" href="css/style.css">
-
+  <!-- GOOGLE FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
     rel="stylesheet">
+
+  <!-- SWIPER CSS - put at the top inside of your head -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+  <!-- MAIN CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+
 
 
 
@@ -41,7 +47,7 @@
       <h1 class="visually-hidden"><a href="index.html">JKC Wellness Hawaii</a></h1>
     </div>
 
-    <nav class="site-nav">
+    <nav class="site-nav light">
       <button class="menubutton">
         <span class="visually-hidden">menu</span>
         <svg class="simple-navicon" width="24" height="21">
@@ -337,16 +343,20 @@
                 </div>
               </div>
             </div>
+
           </div>
+
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
         </div>
 
       </div>
-      <!-- If we need pagination -->
-      <div class="swiper-pagination"></div>
 
-      <!-- If we need navigation buttons -->
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
 
       </div>
       <div class="box-blue-swiper observe-me onscroll-slide-in-from-right delay-4"></div>
@@ -686,10 +696,37 @@
   </footer>
 
 
+  <!-- SWIPER JS - put at the bottom inside of your body -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+
+  <script>
+    const swiper = new Swiper('.swiper', {
+      // Optional parameters
+      loop: true,
+      slidesPerView: 2,
+      spaceBetween: 20,
+      centeredSlides: false,
+
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+      },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+    });
+
+  </script>
 
 
   <!-- MAIN JS -->
   <script src="js/script.js"></script>
+
 
 
 </body>

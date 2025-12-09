@@ -18,6 +18,14 @@ document.addEventListener('DOMContentLoaded', () => {
       sitenav.setAttribute("data-menustate", "open");
     };
   };
+  // CLOSE NAV WHEN A LINK IS CLICKED
+  const sitenavlinks = document.querySelectorAll(".site-nav a");
+  sitenavlinks.forEach((link) => {
+    link.onclick = () => {
+      sitenav.setAttribute("data-menustate", "closed");
+    };
+  });
+
 
   // Remove the data-attribute on resize to fix drawer nav animation
   window.onresize = () => {
