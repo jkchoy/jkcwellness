@@ -1184,19 +1184,19 @@ section:has(.observe-me) {
   z-index: 10;
 }
 
-.hero {
-  background-image: url('../images-jkc/jkc-treatment-room.jpg');
-  background-size: cover;
-  background-position: 50% 50%;
+
+.hero-video {
+  max-width: 100%;
+  /* background-position: 50% 50%; */
   position: relative;
-  /* padding: 4em 1em 1em 1em; */
-  /* text-align: center; */
-  /* min-height: 100svh; */
+  height: auto;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(8, 80px);
-  /* gap: 1vh; */
+  background-size: cover;
 }
+
+
 
 
 .hero-content.container {
@@ -2607,6 +2607,12 @@ section:has(.observe-me) {
   font-size: 1rem;
   line-height: 1.5;
   text-transform: none;
+}
+
+/* CUPPING VIDEO */
+.cupping-video {
+  max-width: 100%;
+  height: auto;
 }
 
 
