@@ -793,7 +793,7 @@ html {
 
 /* STYLING FOR ALL SECTIONS */
 section {
-  padding-block: var(--unit-2xl);
+  padding-block: var(--unit-m);
 }
 
 .hero {
@@ -1186,7 +1186,7 @@ section:has(.observe-me) {
 
 
 .hero-video {
-  max-width: 100%;
+  /* max-width: 100%; */
   /* background-position: 50% 50%; */
   position: relative;
   height: auto;
@@ -2399,7 +2399,7 @@ section:has(.observe-me) {
 
   .box-blue {
     grid-column: 1 / 10;
-    grid-row: 4 / 17;
+    grid-row: 4 / 18;
     z-index: 30;
   }
 
@@ -2444,7 +2444,7 @@ section:has(.observe-me) {
 
   .box-text-cup-explain {
     grid-column: 2 / 8;
-    grid-row: 11 / 18;
+    grid-row: 11 / 17;
     z-index: 60;
     box-shadow: 0 0 15px 7px rgba(84, 83, 83, 0.25);
     /* border: 1px solid orange; */
@@ -2452,7 +2452,7 @@ section:has(.observe-me) {
 
   .box-image-cupping-legs {
     grid-column: 7 / 13;
-    grid-row: 12 / 19;
+    grid-row: 12 / 17;
     z-index: 50;
   }
 
@@ -2785,17 +2785,17 @@ section:has(.observe-me) {
 
     grid-template-columns: 1em 1em repeat(10, auto) 1em 1em;
     /* grid-template-rows: 1em 1em repeat(31, auto) 1em 1em; */
-    grid-template-rows: 1em 1em repeat(34, 60px) 1em 1em;
+    grid-template-rows: 1em 1em repeat(35, 65px) 1em 1em;
 
     .box-blue {
       grid-column: 1 / 9;
-      grid-row: 1 / 36;
+      grid-row: 1 / 37;
       z-index: 20;
     }
 
     .box-tan {
       grid-column: 6 / 15;
-      grid-row: 5 / 39;
+      grid-row: 5 / 40;
       z-index: 10;
     }
 
@@ -2807,32 +2807,32 @@ section:has(.observe-me) {
 
     .box-text {
       grid-column: 5 / 15;
-      grid-row: 9 / 21;
+      grid-row: 8 / 21;
       z-index: 40;
       box-shadow: 0 0 15px 7px rgba(84, 83, 83, 0.25);
     }
 
     .box-image-cupping-legs {
       grid-column: 6 / 12;
-      grid-row: 20 / 29;
+      grid-row: 22 / 29;
       z-index: 50;
     }
 
     .box-text-cup-explain {
-      grid-column: 2 / 10;
-      grid-row: 27 / 37;
+      grid-column: 3 / 10;
+      grid-row: 28 / 38;
       z-index: 60;
       box-shadow: 0 0 15px 7px rgba(84, 83, 83, 0.25);
     }
 
     .hemofire-illustration {
-      grid-column: 2 / 7;
+      grid-column: 2 / 6;
       grid-row: 22 / 27;
       z-index: 90;
       rotate: 18deg;
 
       img {
-        opacity: .4;
+        opacity: .2;
       }
     }
 
@@ -2840,16 +2840,16 @@ section:has(.observe-me) {
       grid-column: 4 / 6;
       grid-row: 9 /11;
       z-index: 90;
-      rotate: 10deg;
+      /* rotate: 10deg; */
 
       img {
-        opacity: .5;
+        opacity: .4;
       }
     }
 
     .glasscup-illustration {
       grid-column: 9 / 12;
-      grid-row: 31 / 34;
+      grid-row: 29 / 31;
 
       z-index: 90;
 
@@ -2862,69 +2862,70 @@ section:has(.observe-me) {
   .box-layout-9 {
 
     grid-template-columns: 1em 1em repeat(5, auto) 1em 1em;
-    grid-template-rows: 1em 1em 1em repeat(27, 85px) 1em 1em 1em;
+    grid-template-rows: 1em 1em 1em repeat(40, 60px) 1em 1em 1em;
 
     /* second section */
 
     .box-blue {
       grid-column: 1 / 6;
-      grid-row: 1 / 30;
+      grid-row: 1 / 43;
       z-index: 20;
     }
 
     .box-tan {
       grid-column: 4 / 10;
-      grid-row: 5 / 35;
+      grid-row: 5 / 47;
       z-index: 10;
     }
 
     .box-image-cupping-stomach {
-      grid-column: 5 / 10;
-      grid-row: 8 / 14;
+      grid-column: 4 / 10;
+      grid-row: 11 / 15;
       z-index: 50;
     }
 
     .box-text.cupping-not-bruise {
       grid-column: 3 / 7;
-      grid-row: 3 / 9;
+      grid-row: 3 / 11;
       z-index: 40;
       box-shadow: 0 0 15px 7px rgba(84, 83, 83, 0.25);
     }
 
     .box-image-cupping-arm {
       grid-column: 2 / 7;
-      grid-row: 21 / 25;
+      grid-row: 28 / 34;
       z-index: 50;
     }
 
     .box-text.cupping-helps {
       grid-column: 3 / 8;
-      grid-row: 13 / 20;
+      grid-row: 16 / 27;
       z-index: 60;
       box-shadow: 0 0 15px 7px rgba(84, 83, 83, 0.25);
     }
 
     .box-text.cups-help-list {
-      margin-left: 50%;
+      margin-left: 26%;
     }
 
 
     .box-text.cupping-conditions {
       grid-column: 3 / 8;
-      grid-row: 25 / 32;
+      grid-row: 34 / 44;
       z-index: 60;
       box-shadow: 0 0 15px 7px rgba(84, 83, 83, 0.25);
     }
 
     .warning-illustration {
-      margin-left: -12%;
-      margin-top: -10%;
+      margin-left: -5;
+      /* margin-top: -6%; */
       align-items: left;
     }
 
     .aircup-illustration2 {
-      grid-column: 6 / 8;
-      grid-row: 12 / 14;
+
+      grid-column: 6 / 9;
+      grid-row: 15 / 17;
       z-index: 90;
 
       img {
@@ -2934,14 +2935,18 @@ section:has(.observe-me) {
 
     .glasscup-illustration2 {
       grid-column: 3 / 4;
-      grid-row: 18 / 19;
+      grid-row: 27 / 29;
       z-index: 90;
+
+      img {
+        opacity: .3;
+      }
     }
 
 
     .siliconecup-illustration {
-      grid-column: 3 / 5;
-      grid-row: 8 / 10;
+      grid-column: 6 / 8;
+      grid-row: 2 / 4;
       z-index: 70;
       rotate: -10deg;
 
@@ -2950,13 +2955,33 @@ section:has(.observe-me) {
       }
     }
   }
+}
 
+
+@media (width < 786px) {
+
+  .hero-subpage.cupping-therapy {
+
+    grid-template-columns: 1em 1em 1em repeat(6, auto) 1em 1em 1em;
+    grid-template-rows: 1em 1em repeat(8, auto) 1em 1em;
+
+    .hero-image {
+      grid-column: 1 / 13;
+      grid-row: 1 / 7;
+    }
+
+    .hero-content-subpage {
+      grid-column: 2 / 12;
+      grid-row: 4 / 13;
+    }
+
+  }
 
   /* facial cupping */
   .box-layout-10 {
 
     grid-template-columns: 1em 1em repeat(8, auto) 1em 1em;
-    grid-template-rows: 1em 1em 1em repeat(55, 65px) 1em 1em 1em;
+    grid-template-rows: 1em 1em repeat(55, 65px) 1em 1em;
 
     .box-text {
       grid-column: 3 / 11;
