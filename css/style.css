@@ -3006,8 +3006,8 @@ section:has(.observe-me) {
     grid-template-columns: 1em 1em repeat(8, auto) 1em 1em;
     grid-template-rows: 1em 1em repeat(8, auto) 1em 1em;
     /* grid-template-rows: auto; */
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
     gap: 2em;
 
     .box-text {
@@ -3025,6 +3025,7 @@ section:has(.observe-me) {
       grid-column: 4 / 16;
       grid-row: 3 / 12;
       z-index: 50;
+
     }
 
     .cups-facial {
