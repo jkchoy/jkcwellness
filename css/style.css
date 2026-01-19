@@ -1670,7 +1670,7 @@ section:has(.observe-me) {
 
 .card {
   box-shadow: 0 0 15px 7px rgba(118, 116, 116, 0.127);
-  cursor: pointer;
+  /* cursor: pointer; */
   transition: 0.4s;
 
 }
