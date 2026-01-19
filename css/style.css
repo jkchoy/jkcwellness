@@ -140,13 +140,14 @@ TABLE OF CONTENTS
 
   /* GLOBAL FONTS */
 
-  --font-body: Nunito Sans,
-  Lato,
+  --font-body: Lato,
+  Nunito Sans,
   arial,
   "helvetica neue",
   sans-serif;
 
-  --font-headings: Cormorant,
+  --font-headings: Orpheuspro,
+  Cormorant,
   serif;
 
 }
@@ -178,9 +179,15 @@ li {
   text-wrap: pretty;
 }
 
+ul {
+  list-style-type: none;
+  text-decoration-line: none;
+}
+
 /* LINKS */
 a {
   color: var(--color-links);
+  text-decoration: none;
 
   /* STYLE THE UNDERLINE */
   text-decoration-color: var(--color-links-light);
@@ -652,7 +659,7 @@ html {
     align-content: center;
     justify-content: center;
     position: fixed;
-    z-index: 90;
+    z-index: 100;
     right: 0;
     top: 0;
     width: 100%;
@@ -1009,8 +1016,51 @@ body>* {
   grid-column: 2 / 8;
   grid-row: 4 / 13;
   position: relative;
-  z-index: 10;
+  z-index: 5;
 }
+
+
+/* SPIN TEXT IN HERO */
+
+.spin {
+  color: var(--color-pink);
+}
+
+.spin:after {
+  content: "";
+  animation: spin 20s linear infinite;
+
+  /* animation-duration: 10s; */
+}
+
+@keyframes spin {
+  0% {
+    content: "Customized massage cupping therapy ear seeds & waxing tailored in a serene space";
+
+  }
+
+  20% {
+    content: "Personalized massage with flowing, rhythmic strokes and adjustable pressure to ease tension, deepen relaxation, and restore balance.";
+  }
+
+  40% {
+    content: "Hot Towels  Bed Warmer  Scapl Massage  DoTerra Deep Blue";
+  }
+
+  60% {
+    content: "Cupping Therapy's gentle suction improves circulation and, with massage, enhances relaxation and tissue mobility.";
+  }
+
+  80% {
+    content: "Constantly Learning Compassionate Transparent Approchable Intuitive";
+  }
+
+  100% {
+    content: "Ear Seed Therapy uses tiny seeds on specific ear acupressure points to help ease stress, headaches, and discomfort naturally.";
+  }
+}
+
+
 
 /* CUSTOM PAGE LAYOUT - 2 COLUMNS: ASIDE + MAIN CONTENT */
 
@@ -1237,6 +1287,7 @@ section:has(.observe-me) {
   margin-top: 1em;
   /* margin-bottom: 1em; */
 
+
   .jkc-eyebrow-hero.container {
     font-size: var(--unit-s);
     font-family: nunito-sans, sans-serif;
@@ -1255,6 +1306,7 @@ section:has(.observe-me) {
     .hero-subtitle {
       font-size: var(--unit-l);
       font-family: cormorant, serif;
+      max-inline-size: 25ch;
     }
 
   }
@@ -1608,7 +1660,7 @@ section:has(.observe-me) {
 #features {
   margin-top: -50px;
   position: relative;
-  z-index: 20;
+  z-index: 5;
 
 }
 
@@ -1617,7 +1669,7 @@ section:has(.observe-me) {
 
 
 .card {
-  box-shadow: 0 0 15px 7px rgba(84, 83, 83, 0.25);
+  box-shadow: 0 0 15px 7px rgba(118, 116, 116, 0.127);
   cursor: pointer;
   transition: 0.4s;
 
@@ -1625,7 +1677,7 @@ section:has(.observe-me) {
 
 /* FEATURES CARDS*/
 #features .card {
-  box-shadow: 0 0 15px 7px rgba(84, 83, 83, 0.25);
+  box-shadow: 0 0 15px 7px rgba(118, 116, 116, 0.127);
   /* border: 1px solid red; */
 
   .image-hover {
@@ -1885,7 +1937,7 @@ section:has(.observe-me) {
     .text-treatment {
       grid-column: 2 / 9;
       grid-row: 2 / 2;
-      z-index: 90;
+      /* z-index: 90; */
       color: var(--color-gray-100)
     }
 
