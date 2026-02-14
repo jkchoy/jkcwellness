@@ -2706,10 +2706,23 @@ section:has(.observe-me) {
     z-index: -1;
   }
 
+  .jkc-eyebrow-card-swiper {
+    font-size: .7rem;
+  }
+
+  .jkc-headline-card-swiper {
+    font-size: 1.3rem;
+  }
+
+  .jkc-card-swiper-text {
+    font-size: .8rem;
+    text-wrap: pretty;
+  }
+
   /* facial cupping */
   .box-layout-10 {
 
-    grid-template-rows: 1em 1em 1em repeat(62, 30px) 1em 1em;
+    grid-template-rows: repeat(58, 30px);
     /* grid-template-rows: auto; */
     /* display: flex;
     flex-direction: column; */
