@@ -2729,7 +2729,7 @@ section:has(.observe-me) {
 }
 
 
-.box-layout-10 {
+.box-layout-10wax {
   grid-template-rows: repeat(12, 90px);
 
   /* border: 1px solid green; */
@@ -2890,7 +2890,7 @@ section:has(.observe-me) {
   }
 }
 
-.box-layout-11 {
+.box-layout-11wax {
   grid-template-rows: repeat(13, 90px);
   /* border: 1px solid green; */
 
@@ -3011,7 +3011,7 @@ section:has(.observe-me) {
   }
 }
 
-.box-layout-12 {
+.box-layout-12wax {
   grid-template-rows: repeat(13, 90px);
 
   /* border: 1px solid green; */
@@ -3374,7 +3374,7 @@ section:has(.observe-me) {
 @media (width < 786px) {
 
   /* facial cupping */
-  .box-layout-10 {
+  .box-layout-10wax {
 
     grid-template-columns: 1em 1em repeat(8, auto) 1em 1em;
     grid-template-rows: 1em 1em repeat(8, auto) 1em 1em;

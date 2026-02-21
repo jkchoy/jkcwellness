@@ -5,12 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>JKC Wellness | WAXING</title>
+  <title>JKC Wellness | LET'S CONNECT</title>
   <meta name="description" content="A simple HTML CSS and JS starter base">
 
   <!-- MAIN CSS -->
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/waxing-style.css">
+  <link rel="stylesheet" href="css/contact-style.css">
 
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -68,9 +68,9 @@
             <a href="waxing.html">Waxing</a>
           </div>
         </div>
-        <li><a href="#">My Story</a></li>
-        <li><a href="#">Let's Connect</a></li>
-        <li><a href="#">The Policies</a></li>
+        <li><a href="aboutme.html">My Story</a></li>
+        <li><a href="contact.html">Let's Connect</a></li>
+        <li><a href="policies.html">The Policies</a></li>
 
         <!-- <li><a href="styleguide.html">Style Guide</a></li> -->
       </ul>
@@ -86,10 +86,11 @@
 
       <div class="hero-content-subpage slide-from-top-and-fade-in delay-3">
 
-        <div class="jkc-eyebrow-hero slide-from-top-and-fade-in delay-4">smooth, clean, & hair-free</div>
-        <h1 class="jkc-headline-hero slide-from-top-and-fade-in delay-5">Face & full-body <span
-            class="jkc-headline-hero-white">hair removal</span></h1>
-        <a href="#features" class="button-hero scale-from-top-and-fade-in delay-6"> Schedule Your Appointment </a>
+        <div class="jkc-eyebrow-hero slide-from-top-and-fade-in delay-4">Let's Start Your Wellness Journey</div>
+        <h1 class="jkc-headline-hero slide-from-top-and-fade-in delay-5">got Questions? <span
+            class="jkc-headline-hero-white">Message or text me!</span></h1>
+        <a href="https://app.squareup.com/appointments/book/jvr7kx3t78ngct/LWCYV2JVW6BKG/starts"
+          class="button-hero scale-from-top-and-fade-in delay-6"> Schedule Your Appointment </a>
       </div>
 
 
@@ -101,61 +102,106 @@
           alt="box outline" width="150" height="150"></div> -->
     </section>
 
-    <section>
+    <section id="features">
       <div class="container">
-        <h2 class="text-treatment facial-title underline">Facial Waxing</h2>
-        <div class="box-layout box-layout-10">
-          <div class="box-text treatment observe-me onscroll-slide-in-from-right delay-5">
 
-            <ul class="waxing-text">
-              <li>Eye Brows $20</li>
-              <li>Lip Wax $15</li>
-              <li>Chin Wax $20</li>
-            </ul>
-            <a href="#features" class="button btn-treatment">Schedule Your Appointment</a>
+        <div class="row">
+          <div class="one-third column">
+            <div class="observe-me onscroll-slide-in-from-right delay-5">
+              <div class="jkc-eyebrow">Promise I won't ghost you</div>
+              <h2 class="jkc-headline">Start the <span class="jkc-headline-gold"> <br> Conversation</span></h2>
 
-          </div>
-          <div class="box-text observe-me onscroll-slide-in-from-right delay-5">
+              <p class="waxing-text">
+                Send me a message through the form <br>
+                <em>If you want a quick response:</em> <br>
+                Text Me <a href="sms:18083913429">+1 (808) 391-3429</a> <br>
+                or Email Me <a href="mailto:jkcwellness@gmail.com">jkcwellness@gmail.com</a>
+              </p>
+              <p class="text-gold">
+                Phone calls are hard for me answer, <br>
+                if you do call me and I miss your call <br>
+                —give me 24-48 hours to call back
 
-            <div class="jkc-eyebrow">don't jeopardize your skin</div>
-            <h2 class="jkc-headline treatment-headline">using medication <span
-                class="treatment-headline jkc-headline-gold">&/or</span> products?</h2>
-            <p>Certain medications and/or products could affect your waxing service—like rip your skin. Please let me
-              know if you are using:
-            </p>
-            <ul class="text-gold">
-              <li>Alpha or Beta Hydroxy Acids</li>
-              <li>Benzoyl Peroxide</li>
-              <li>Retin-A/Retinol</li>
-              <li>Accutane</li>
-              <li>Renova</li>
-              <li>Differin</li>
-            </ul>
+              </p>
+              <a href="https://app.squareup.com/appointments/book/jvr7kx3t78ngct/LWCYV2JVW6BKG/starts"
+                class="button btn-treatment">Schedule Your Appointment</a>
 
-            <p>Please let me know if you've had any: Facial Surgeries, Laser, Peels, or Microdermabrasion
-              treatments within the last 6 months.</p>
-
+            </div>
           </div>
 
-          <div class="box-image cupping-facial observe-me onscroll-slide-in-from-left">
-            <img src="images-jkc/jkc-cupping-facial.jpg" alt="JKC Wellness Facial Cupping Therapy" width="700"
-              height="700">
+          <div class="two-third column">
+
+            <div class="contact-blue observe-me onscroll-slide-in-from-right delay-4">
+
+              <form>
+
+                <lable for="contact_name">Name:</lable>
+                <input type="text" id="contact_name" name="contact_name" />
+
+                <lable for="email">Email Address:</lable>
+                <input type="text" id="contact_email" name="contact_email" />
+
+                <lable for="email">Phone Number:</lable>
+                <input type="text" id="contact_number" name="contact_number" />
+
+                <lable for="contact_message">Message:</lable>
+                <textarea type="contact_message" id="contact_message"></textarea>
+
+
+                <input type="submit" value="Submit" />
+
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="features">
+      <div class="container">
+        <div class="row two-mobile">
+
+          <!------ vist our shop ------>
+          <div class="one-third">
+            <div class="card-contact">
+
+              <a href="https://maps.app.goo.gl/nfa22AvzLrz12XTf9"><img
+                  src="../jkcwellness/images-jkc/massage-card-illustration-dkblue.png" alt="illustration of massage"
+                  width="500" height="500"></a>
+              <h3 class="contact-info">View location</h3>
+              <p class="contact-text">Shops at Dole Cannery
+                <br>
+                650 Iwilei Road #165, Honolulu, HI 96817
+              </p>
+            </div>
           </div>
 
+          <!------ text me ------>
+          <div class="one-third">
+            <div class="card-contact">
+              <a href="sms:18083913429">
+                <img src="../jkcwellness/images-jkc/cupping-line-illustration2.jpg"
+                  alt="illustration of cupping massage" width="500" height="500"></a>
+              <h3 class="contact-info">text me</h3>
+              <p class="contact-text">For a quicker response
+                <br>(808) 391-3429
 
-          <div class="box-blue observe-me onscroll-slide-in-from-right delay-4"></div>
-          <div class="box-blue two observe-me onscroll-slide-in-from-right delay-4"></div>
-          <div class="box-blue three observe-me onscroll-slide-in-from-right delay-4"></div>
-
-          <!-- poi facial cup -->
-          <div class="poi-facial-cup-illustration img observe-me onscroll-slide-in-from-left">
-            <img src="images-jkc/illustration-facialcup-poi.png" alt="facial cup illustration" width="350" height="250">
+              </p>
+            </div>
           </div>
 
-
-
-          <div class="box-blue2 observe-me onscroll-slide-in-from-right delay-4"></div>
-
+          <!------ email me ------>
+          <div class="one-third">
+            <div class="card-contact">
+              <a href="mailto:jkcwellness@gmail.com"><img
+                  src="../jkcwellness/images-jkc/seeds-earseeds-line-illustration.png"
+                  alt="illustration of an ear with ear seeds" width="500" height="500"></a>
+              <h3 class="contact-info">email me</h3>
+              <p class="contact-text">jkcwellness@gmail.com</p>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -163,142 +209,115 @@
     </section>
 
 
-    <section>
+    <section id="features">
       <div class="container">
-        <h2 class="text-treatment bodywax facial-title  underline">Body Waxing</h2>
-        <div class="box-layout box-layout-11">
-          <div class="box-text treatment observe-me onscroll-slide-in-from-right delay-5">
+        <div class="observe-me onscroll-slide-in-from-right delay-5">
 
-            <ul class="waxing-text">
-              <div class="row">
-                <div class="one-half column">
-                  <li>Full Leg Wax $65</li>
-                  <li>Half Leg Wax $55</li>
-                  <li>Back Wax $65</li>
-                </div>
-
-                <div class="one-half column">
-                  <li>Underarms Wax $25</li>
-                  <li>Spot Treat Wax $20</li>
-                  <li>Chest Wax $45</li>
-                </div>
-            </ul>
-            <a href="https://app.squareup.com/appointments/book/jvr7kx3t78ngct/LWCYV2JVW6BKG/start"
-              class="button btn-treatment">Schedule Your Appointment</a>
-
-          </div>
-          <div class="box-text observe-me onscroll-slide-in-from-right delay-5">
-
-            <div class="jkc-eyebrow">you're smooth & hair-less. now don't mess it up.</div>
-            <h2 class="jkc-headline treatment-headline">after care <span
-                class="treatment-headline jkc-headline-gold">rules</span></h2>
-            <p>Please let your hair grow for approximately <strong class="text-gold">two weeks</strong> before your
-              appointment.
-            </p>
-
-            <p><strong class="text-gold">Avoid sun exposure</strong> 24 hours prior to and 24 hours after waxing.</p>
-
-            <p><strong class="text-gold">Minimize caffeine</strong> on the day of your visit—it can stimulate the
-              nervous system and increase discomfort.
-            </p>
-
-            <p><strong class="text-gold">Steer clear of heat and sweat</strong> for 24 hours post-waxing. This means no
-              workouts, sauna, steam room, hot
-              tub, or beach trips—sweat can carry bacteria into pores and irritate freshly waxed skin.</p>
-
-          </div>
-
-          <div class="box-image cupping-facial observe-me onscroll-slide-in-from-left">
-            <img src="images-jkc/jkc-cupping-facial.jpg" alt="JKC Wellness Facial Cupping Therapy" width="700"
-              height="700">
-          </div>
-
-
-          <div class="box-blue observe-me onscroll-slide-in-from-right delay-4"></div>
-          <div class="box-blue two observe-me onscroll-slide-in-from-right delay-4"></div>
-          <div class="box-blue three observe-me onscroll-slide-in-from-right delay-4"></div>
-
-          <!-- poi facial cup -->
-          <div class="poi-facial-cup-illustration img observe-me onscroll-slide-in-from-left">
-            <img src="images-jkc/illustration-facialcup-poi.png" alt="facial cup illustration" width="350" height="250">
-          </div>
-
-
+          <div class="jkc-eyebrow">Plan your parking ahead</div>
+          <h2 class="jkc-headline treatment-headline">know where to <span
+              class="treatment-headline jkc-headline-gold">park</span></h2>
+          <p>I'm located in Dole Cannery next to Costco Iwilei.
+          </p>
+          <p>You can park in the Costco lot or in the Dole Movie Theaters structure—I'll validate your ticket.</p>
+          <p>Be aware: There is traffic surrounding Costco. There is construction on Dillingham Blvd and on Nimitz
+            Highway</p>
 
         </div>
+        <br><br><br>
+
+
+        <div class="observe-me onscroll-slide-in-from-right delay-5">
+          <div class="jkc-eyebrow contact">Located inside Synergy Salon & Spa</div>
+          <h2 class="jkc-headline treatment-headline contact">how to find
+            me</h2>
+          <div class="row">
+            <div class="two-thirds column">
+              <h3 class="contact-parking">if you park at costco</h3>
+              <div class="box-image cupping-facial observe-me onscroll-slide-in-from-left">
+                <img src="images-jkc/jkc-cupping-facial.jpg" alt="JKC Wellness Facial Cupping Therapy" width="300"
+                  height="300">
+              </div>
+            </div>
+
+            <div class="one-third column">
+              <br><br>
+
+              <p class="waxing-text">Walk along the pathway—you'll pass <br><strong>Uniforms Hawaii</strong> and
+                <strong>Toy Lynx </strong>your
+                left you'll see a <strong>cardio room</strong> on the right
+                —go past that, then <em>turn right, go through the <strong>double doors</strong></em> and enter the
+                building.
+                Once inside, the
+                salon <span class="text-gold">(Synergy Salon & Spa)</span> will be on your left—that's where I
+                am.
+              </p>
+
+            </div>
+
+          </div>
+        </div>
+
+        <br><br>
+
+        <div class="observe-me onscroll-slide-in-from-left delay-5">
+          <div class="row">
+            <div class="one-third column">
+              <br><br>
+              <p class="waxing-text">The Dole Cannery (where I'm located) is <strong>across the street</strong>. Enter
+                through the
+                <strong>glass double doors</strong>, go across the <strong>food court</strong>, there's a set of
+                <strong>escalators</strong>,
+                next to is is an <strong>empty unit</strong>. I'm in the
+                salon <span class="text-gold">(Synergy Salon & Spa)</span> located across the <strong>empty
+                  unit</strong>.
+              </p>
+
+            </div>
+
+            <div class="two-thirds column">
+              <h3 class="contact-parking">if you park at dole movie theaters</h3>
+              <div class="box-image cupping-facial observe-me onscroll-slide-in-from-left">
+                <img src="images-jkc/jkc-cupping-facial.jpg" alt="JKC Wellness Facial Cupping Therapy" width="300"
+                  height="300">
+              </div>
+            </div>
+
+          </div>
+        </div>
+    </section>
+
+    <section id="features">
+
+      <h3 class="contact-parking">i'm located inside synergy salon & Spa</h3>
+      <div class="box-image cupping-facial observe-me onscroll-slide-in-from-left">
+        <img src="images-jkc/jkc-cupping-facial.jpg" alt="JKC Wellness Facial Cupping Therapy" width="300" height="300">
+      </div>
+    </section>
+
+    <section id="features">
+      <div class="row">
+        <div class="two-thirds column">
+          <div class="two-third column">
+            <div class="contact-blue two observe-me onscroll-slide-in-from-right delay-4"></div>
+          </div>
+
+        </div>
+
+        <div class="one-third column">
+
+          <p>explain hours</p>
+        </div>
+
+
+
       </div>
 
 
     </section>
 
-    <section>
-      <div class="container">
-        <h2 class="text-treatment brazwax-title underline">Brazilian Waxing</h2>
-        <div class="box-layout box-layout-12">
-          <div class="box-text treatment observe-me onscroll-slide-in-from-right delay-5">
 
-            <p class="waxing-text">
-              <strong>Bikini Wax</strong> $35 <br>
-              Removes only hair outside the bikini line.
-            </p>
-
-            <p class="waxing-text">
-              <strong>Modified Bikini Wax</strong> $50 <br>
-              Removes hair from the top of the pant line down and 2-3 inches from the crease of your thigh (does not
-              remove any hair from the labia).
-            </p>
-
-            <p class="waxing-text">
-              <strong>Brazilian Wax</strong> $75 <br>
-              Removes all hair in front, as well as labia hair. <br>
-              <em>Optional landing strip or inverted triangle in the front.</em>
-            </p>
-
-            <p class="waxing-text">
-              <strong>Brazilian Maintenance Wax</strong> $60 <br>
-              For returning clients within 4 weeks of a Brazilian Wax.
-            </p>
-            <a href="#features" class="button btn-treatment">Schedule Your Appointment</a>
-
-          </div>
-          <div class="box-text observe-me onscroll-slide-in-from-right delay-5">
-
-            <div class="jkc-eyebrow">timing matters</div>
-            <h2 class="jkc-headline treatment-headline">brazilian <span
-                class="treatment-headline jkc-headline-gold">&</span> maintenacne</h2>
-            <p>For your comfort, book during your mid-cycle—12-15 days following the <span class="text-gold">FIRST
-                DAY</span> of your
-              menstrual cycle.
-            </p>
-            <p>Waxing on or near your menstrual cycle can be more sensitive</p>
-
-          </div>
-
-          <div class="box-image cupping-facial observe-me onscroll-slide-in-from-left">
-            <img src="images-jkc/jkc-cupping-facial.jpg" alt="JKC Wellness Facial Cupping Therapy" width="700"
-              height="700">
-          </div>
-
-
-          <div class="box-blue observe-me onscroll-slide-in-from-right delay-4"></div>
-          <div class="box-blue two observe-me onscroll-slide-in-from-right delay-4"></div>
-          <div class="box-blue three observe-me onscroll-slide-in-from-right delay-4"></div>
-
-          <!-- poi facial cup -->
-          <div class="poi-facial-cup-illustration img observe-me onscroll-slide-in-from-left">
-            <img src="images-jkc/illustration-facialcup-poi.png" alt="facial cup illustration" width="350" height="250">
-          </div>
-
-
-
-          <div class="box-blue2 observe-me onscroll-slide-in-from-right delay-4"></div>
-
-        </div>
-      </div>
-
-
-    </section>
   </main>
+
 
   <footer class="site-footer">
     <div class="container">
@@ -310,11 +329,12 @@
               height="200">
           </a>
           <div>
-            <a href="#features" class="button scale-from-top-and-fade-in delay-3"> book Your Appointments </a>
+            <a href="https://app.squareup.com/appointments/book/jvr7kx3t78ngct/LWCYV2JVW6BKG/starts"
+              class="button scale-from-top-and-fade-in delay-3"> book Your Appointments </a>
           </div>
 
           <div>
-            <a href="#" class="button scale-from-top-and-fade-in delay-3">read the Policies & Guidelines</a>
+            <a href="policies.html" class="button scale-from-top-and-fade-in delay-3">read the Policies & Guidelines</a>
           </div>
         </div>
         <div class="one-fourth">
@@ -329,8 +349,8 @@
               </li>
               <li><a href="earseeds.html">Ear Seeds</a></li>
               <li><a href="waxing.html">Waxing</a></li>
-              <li><a href="#">My Story</a></li>
-              <li><a href="#">Let's Connect</a></li>
+              <li><a href="aboutme.html">My Story</a></li>
+              <li><a href="contact.html">Let's Connect</a></li>
             </ul>
           </nav>
         </div>
