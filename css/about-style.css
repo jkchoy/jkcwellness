@@ -1537,6 +1537,11 @@ section:has(.observe-me) {
   color: var(--color-gold-400);
 }
 
+.text-gold.uppercase {
+  text-transform: uppercase;
+}
+
+
 @media (width < 768px) {
 
   .hero-subpage {
@@ -1875,6 +1880,7 @@ section:has(.observe-me) {
   .cupping-facial {
     grid-column: 3 / 7;
     grid-row: 2 / 7;
+    z-index: 50;
   }
 
   /* .cups-facial {
@@ -2037,7 +2043,7 @@ section:has(.observe-me) {
     .box-image.cups-facial {
       grid-column: 1 / 16;
       grid-row: 28 / 33;
-      z-index: 50;
+      z-index: 60;
     }
 
     .jkc-headline.about-facial-cups {

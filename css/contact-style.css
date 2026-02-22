@@ -2141,3 +2141,24 @@ section:has(.observe-me) {
   }
 
 }
+
+.contact-box {
+  background-color: var(--color-teal);
+  padding: var(--unit-m);
+  border-radius: var(--border-radius);
+  text-transform: uppercase;
+  box-shadow: 0 0 15px 7px rgba(118, 116, 116, 0.127);
+  color: var(--color-white);
+}
+
+.contact-box.blue {
+  background-color: var(--color-blue-900);
+
+}
+
+.hours-title {
+  font-size: var(--unit-l);
+  padding: 0 0 0 1em;
+  text-transform: uppercase;
+  color: var(--color-white)
+}
