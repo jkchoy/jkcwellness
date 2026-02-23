@@ -1785,41 +1785,19 @@ section:has(.observe-me) {
 }
 
 
-.massage-title.underline::after {
+.about-title.underline::after {
   position: absolute;
   top: 0;
   left: 0;
   content: '';
   display: block;
-  width: 50%;
+  width: 30%;
   height: 100%;
   box-shadow: inset 0 -0.55em 0 #eeeeee;
   z-index: -1;
 }
 
-.prenatal-title.underline::after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  content: '';
-  display: block;
-  width: 53%;
-  height: 100%;
-  box-shadow: inset 0 -0.55em 0 #eeeeee;
-  z-index: -1;
-}
 
-.reflexology-title.underline::after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  content: '';
-  display: block;
-  width: 75%;
-  height: 100%;
-  box-shadow: inset 0 -0.55em 0 #eeeeee;
-  z-index: -1;
-}
 
 .btn-treatment {
   margin-top: 2em;

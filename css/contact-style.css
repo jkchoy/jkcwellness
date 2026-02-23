@@ -2142,6 +2142,14 @@ section:has(.observe-me) {
 
 }
 
+p.costco-parking {
+  margin: 0;
+}
+
+.contact-parking.dole {
+  text-align: right;
+}
+
 .contact-box {
   background-color: var(--color-teal);
   padding: var(--unit-m);
@@ -2161,4 +2169,28 @@ section:has(.observe-me) {
   padding: 0 0 0 1em;
   text-transform: uppercase;
   color: var(--color-white)
+}
+
+@media (width < 786px) {
+
+
+  .box-layout-contact-1 {
+
+    grid-template-columns: 1em 1em repeat(6, 1fr) 1em 1em;
+    grid-template-rows: 1em 1em repeat(23, 50px) 1em 1em;
+
+    .div-1 {
+      grid-column: 1 / 10;
+      grid-row: 1 / 10;
+      /* border: 1px solid red; */
+    }
+
+    .div-2 {
+      grid-column: 2 / 10;
+      grid-row: 11 / 15;
+
+    }
+
+
+  }
 }
