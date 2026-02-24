@@ -1419,6 +1419,13 @@ section:has(.observe-me) {
 
 }
 
+.jkc-eyebrow.regerts {
+
+  color: var(--color-blue-950);
+  border: 1px solid red;
+
+}
+
 .hero-image {
   max-width: 100%;
   height: auto;
@@ -1518,6 +1525,14 @@ section:has(.observe-me) {
   text-transform: uppercase;
 }
 
+.jkc-headline-white {
+  color: var(--color-white);
+  font-size: 2.5rem;
+  margin-block: var(--unit-s);
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
 .jkc-headline.ear,
 .jkc-headline-gold.ear {
   font-size: 2.2rem;
@@ -1555,8 +1570,13 @@ section:has(.observe-me) {
     }
 
     .hero-content-subpage {
+      background-color: var(--color-lightblue);
+      padding: var(--unit-xl);
       grid-column: 2 / 12;
       grid-row: 4 / 13;
+      z-index: 60;
+      border-radius: var(--border-radius);
+      clip-path: none;
     }
 
   }
@@ -1769,6 +1789,7 @@ section:has(.observe-me) {
   font-size: var(--unit-l);
   margin-block: var(--unit-m);
   text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 
@@ -1853,6 +1874,8 @@ section:has(.observe-me) {
   .jkc-eyebrow.about {
     color: var(--color-blue-950);
   }
+
+
 
   /* kea */
   .cupping-facial {

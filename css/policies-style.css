@@ -1541,8 +1541,13 @@ section:has(.observe-me) {
     }
 
     .hero-content-subpage {
+      background-color: var(--color-teal);
+      padding: var(--unit-xl);
       grid-column: 2 / 12;
       grid-row: 4 / 13;
+      z-index: 60;
+      border-radius: var(--border-radius);
+      clip-path: none;
     }
 
   }
