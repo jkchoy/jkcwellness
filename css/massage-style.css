@@ -622,17 +622,7 @@ html {
   padding-block-start: calc(var(--unit-xs) + .1em); */
 }
 
-/* SHOW MENU BUTTON ON HIGHER LAYER WHEN NAV IS OPEN */
-.site-nav .menubutton {
-  position: relative;
-  z-index: 100;
-  border: none;
-  font-size: inherit;
-  font-family: inherit;
-  padding: var(--unit-xs);
-  margin-block-start: var(--unit-xs);
-  background-color: transparent;
-}
+
 
 /* SMALL SCREENS: SHOW MENU BUTTON, HIDE NAV */
 .site-nav .menubutton {

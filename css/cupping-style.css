@@ -625,7 +625,7 @@ html {
 /* SHOW MENU BUTTON ON HIGHER LAYER WHEN NAV IS OPEN */
 .site-nav .menubutton {
   position: relative;
-  z-index: 100;
+  z-index: 200;
   border: none;
   font-size: inherit;
   font-family: inherit;
@@ -2288,8 +2288,9 @@ section:has(.observe-me) {
 
 .swiper-blue-box {
   background-color: var(--color-mint-green);
-  /* padding: var(--unit-xl);
-  border-radius: var(--border-radius); */
+  padding: var(--unit-xl) 3%;
+  margin-block: 4em;
+  /* border-radius: var(--border-radius); */
 }
 
 .swiper-cup-card {

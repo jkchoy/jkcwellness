@@ -632,7 +632,7 @@ html {
 /* SHOW MENU BUTTON ON HIGHER LAYER WHEN NAV IS OPEN */
 .site-nav .menubutton {
   position: relative;
-  z-index: 100;
+  z-index: 200;
   border: none;
   font-size: inherit;
   font-family: inherit;
