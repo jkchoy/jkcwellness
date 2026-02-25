@@ -1399,6 +1399,7 @@ section:has(.observe-me) {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(6, 100px);
+  padding: 5em;
   /* border: 1px solid red; */
 
 }
@@ -1422,7 +1423,7 @@ section:has(.observe-me) {
 .jkc-eyebrow.regerts {
 
   color: var(--color-blue-950);
-  border: 1px solid red;
+  /* border: 1px solid red; */
 
 }
 
@@ -1579,6 +1580,14 @@ section:has(.observe-me) {
       clip-path: none;
     }
 
+    .jkc-headline-hero {
+      font-size: 3em;
+    }
+
+    .jkc-headline-hero-white {
+      font-size: 1.2em;
+
+    }
   }
 }
 
@@ -1854,20 +1863,19 @@ section:has(.observe-me) {
 
 
 .box-layout-11 {
-  grid-template-rows: repeat(29, 90px);
+  grid-template-rows: repeat(30, 90px);
 
   /* border: 1px solid green; */
 
   .about-text {
-    grid-column: 3 / 7;
+    grid-column: 2 / 7;
     grid-row: 9 / 14;
     z-index: 60;
-
 
   }
 
   .about-text.treatment {
-    grid-column: 8 / 11;
+    grid-column: 8 / 12;
     grid-row: 2 / 7;
   }
 
@@ -1879,7 +1887,7 @@ section:has(.observe-me) {
 
   /* kea */
   .cupping-facial {
-    grid-column: 3 / 7;
+    grid-column: 2 / 7;
     grid-row: 2 / 7;
     z-index: 50;
   }
@@ -1892,7 +1900,7 @@ section:has(.observe-me) {
   } */
 
   .box-blue {
-    grid-column: 2 / 7;
+    grid-column: 1 / 7;
     grid-row: 16 / 22;
     z-index: 30;
     background-color: var(--color-lightblue);
@@ -1929,13 +1937,13 @@ section:has(.observe-me) {
   }
 
   .box-image.me-about {
-    grid-column: 6 / 11;
+    grid-column: 6 / 12;
     grid-row: 17 / 22;
     z-index: 50;
   }
 
   .about-text.me-about {
-    grid-column: 3 / 5;
+    grid-column: 2 / 6;
     grid-row: 17 / 21;
   }
 
@@ -1955,7 +1963,8 @@ section:has(.observe-me) {
   .about-text.blue-box {
     grid-column: 8 / 11;
     grid-row: 25 / 28;
-    color: var(--color-white)
+    color: var(--color-white);
+
   }
 
   .lady-line-illustration {
@@ -1971,13 +1980,7 @@ section:has(.observe-me) {
     }
   }
 
-  .blue-facial-cup-illustration {
-    grid-column: 11 / 13;
-    grid-row: 12 / 15;
-    z-index: 90;
-    /* rotate: -70deg; */
 
-  }
 
 }
 
@@ -1986,95 +1989,244 @@ section:has(.observe-me) {
 
 @media (width < 786px) {
 
-  /* facial cupping */
+  .about-title.underline::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    display: block;
+    width: 47%;
+    height: 100%;
+    box-shadow: inset 0 -0.55em 0 #eeeeee;
+    z-index: -1;
+  }
+
   .box-layout-11 {
 
-    grid-template-columns: 1em 1em repeat(8, auto) 1em 1em;
-    grid-template-rows: 1em 1em repeat(8, auto) 1em 1em;
-    /* grid-template-rows: auto; */
-    /* display: flex;
-    flex-direction: column; */
-    gap: 2em;
+    grid-template-columns: 1em 1em 1em repeat(6, 1fr) 1em 1em 1em;
+    grid-template-rows: 1em 1em repeat(53, 50px) 1em 1em;
+
+    /* border: 1px solid green; */
 
     .about-text {
-      grid-column: 3 / 11;
-      grid-row: 12 / 27;
+      grid-column: 3 / 7;
+      grid-row: 22 / 27;
       z-index: 60;
-      /* box-shadow: 0 0 15px 7px rgba(118, 116, 116, 0.127); */
-      /* background-color: yellow; */
+
     }
 
+    .about-text.treatment {
+      grid-column: 2 / 12;
+      grid-row: 1 / 12;
+    }
 
+    .jkc-eyebrow.about {
+      color: var(--color-blue-950);
+    }
+
+    .about-text.three {
+      grid-column: 2 / 12;
+      grid-row: 19 / 29;
+      z-index: 60;
+
+    }
+
+    .about-text.four {
+      grid-column: 2 / 12;
+      grid-row: 33 / 43;
+
+      /* display: none; */
+    }
 
     /* kea */
     .cupping-facial {
-      grid-column: 4 / 16;
-      grid-row: 3 / 12;
+      grid-column: 2 / 12;
+      grid-row: 12 / 18;
       z-index: 50;
-
-    }
-
-    .cups-facial {
-      grid-column: 9 / 13;
-      grid-row: 6 / 9;
-      z-index: 50;
-      box-shadow: 0 0 15px 7px rgba(118, 116, 116, 0.127);
-
     }
 
     .box-blue {
-      grid-column: 1 / 9;
-      grid-row: 1 / 25;
+      grid-column: 1 / 13;
+      grid-row: 1 / 14;
       z-index: 30;
+      background-color: var(--color-lightblue);
+
     }
 
-    .box-text.facial-cups-help {
-      grid-column: 1 / 10;
-      grid-row: 35 / 43;
-      z-index: 60;
+
+    .box-blue.two {
+      grid-column: 1 / 13;
+      grid-row: 33 / 44;
+      z-index: 30;
+      background-color: var(--color-lightblue);
+      clip-path: none;
+
     }
 
-    .box-text.about-facial-cups {
-      grid-column: 7 / 11;
-      grid-row: 53 / 60;
-      z-index: 60;
-      /* box-shadow: 0 0 15px 7px rgba(118, 116, 116, 0.127); */
+    .box-blue.three {
+      grid-column: 1 / 13;
+      grid-row: 14 / 33;
+      z-index: 20;
+      background-color: var(--color-gray-100);
+
     }
 
-    .box-image.cups-facial {
-      grid-column: 1 / 16;
-      grid-row: 28 / 33;
-      z-index: 60;
+    .box-blue.five {
+      grid-column: 1 / 13;
+      grid-row: 43 / 58;
+      z-index: 20;
+      background-color: var(--color-blue-950);
+      /* display: none; */
     }
 
-    .jkc-headline.about-facial-cups {
-      font-size: 2.5em;
+    .box-image.me-about {
+      grid-column: 2 / 12;
+      grid-row: 29 / 35;
+      z-index: 50;
+      /* display: none; */
     }
 
-    .jkc-headline-gold.about-facial-cups {
-      font-size: 1em;
+    .about-text.me-about {
+      grid-column: 2 / 12;
+      grid-row: 36 /40;
+      /* display: none; */
     }
 
-    .facial-cups-help-list {
-      margin-left: 40%;
+    .box-image.blue-box {
+      grid-column: 1 / 7;
+      grid-row: 42 / 48;
+      z-index: 50;
+
     }
 
-    .jkc-headline.facial-cups-help-text {
-      font-size: 2em;
-      text-align: center;
+
+    .about-text.blue-title {
+      grid-column: 5 / 13;
+      grid-row: 46 / 47;
+
+      .treatment-headline {
+        color: var(--color-white)
+      }
     }
 
-    .jkc-headline-gold.facial-cups-help-text {
-      font-size: 1em;
-      text-align: center;
+
+
+    .about-text.blue-box {
+      grid-column: 3 / 11;
+      grid-row: 49 / 51;
+      color: var(--color-white);
+
     }
 
-    .poi-facial-cup-illustration,
-    .blue-facial-cup-illustration,
+    .lady-line-illustration {
+      grid-column: 5 / 12;
+      grid-row: 19 / 27;
+      z-index: 90;
+
+      img {
+        opacity: .2;
+        width: 100%;
+        height: 100%;
+
+      }
+    }
+
     .blue-facial-cup-illustration {
-      display: none;
+      grid-column: 11 / 13;
+      grid-row: 12 / 15;
+      z-index: 90;
+      /* rotate: -70deg; */
+
     }
+
+
   }
 
 
+}
+
+/* SPIN GALLERY  */
+.gallery {
+  color: var(--color-pink);
+}
+
+.gallery-container {
+  max-width: 100%;
+  height: auto;
+  grid-column: 4 / 11;
+  grid-row: 2 / 9;
+  float: left;
+  animation-name: gallery;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.gallery:after {
+  content: "";
+  animation: gallery 10s linear infinite;
+
+}
+
+@keyframes gallery {
+  0% {
+    /* opacity: 1; */
+    content: url('../images-jkc/choy-kaneshiro-dark.jpg');
+  }
+
+  25% {
+    /* opacity: 0; */
+    content: url('../images-jkc/mahiname-dark.jpg');
+  }
+
+  50% {
+    /* opacity: 0; */
+    content: url('../images-jkc/marshmallow-dark.jpg');
+  }
+
+  75% {
+    /* opacity: 0; */
+    content: url('../images-jkc/jackiecoding-dark.jpg');
+  }
+
+  100% {
+    /* opacity: 1; */
+    content: url('../images-jkc/damianme.jpg');
+  }
+
+}
+
+
+/* SPIN TEXT  */
+
+.spin {
+  color: var(--color-pink);
+}
+
+.spin:after {
+  content: "";
+  animation: spin 12s linear infinite;
+  /* animation-duration: 10s; */
+}
+
+@keyframes spin {
+  0% {
+    content: "when I make s'mores, i love when the marshmallow are burnt";
+  }
+
+  25% {
+    content: "I have an Australian Shepherd/Blue Heeler mis named Mahina";
+  }
+
+  50% {
+    content: "I'm currenlty in school full-time for web development and coding. I'll be applying for Acupunture School later this year.";
+  }
+
+  75% {
+    content: "My hair has been blue for over 10 years";
+  }
+
+  100% {
+    content: "I have 2 kids (one boy & one girl) and a boyfriend who has been by my side since 2009.";
+  }
 }
