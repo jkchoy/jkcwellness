@@ -817,6 +817,27 @@ section {
   padding-inline: var(--unit-s);
 }
 
+.site-footer ul {
+  margin: 0;
+  padding: 0;
+}
+
+@media (width >=768px) {
+  .site-footer .footer-row {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 3em;
+  }
+
+
+}
+
+.site-footer .footer-column {
+  margin-block-end: 4em;
+}
+
+
+
 /* REMOVE FOOTER PADDING IF IT HAS A CONTAINER */
 .site-footer:has(.container) {
   padding-inline: 0;
