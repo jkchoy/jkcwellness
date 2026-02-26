@@ -2853,7 +2853,7 @@ section:has(.observe-me) {
       grid-row: 8 / 14;
       z-index: 60;
       box-shadow: 0 0 15px 7px rgba(118, 116, 116, 0.127);
-      background-color: pink;
+
     }
 
     .wax-box-text.treatment {
@@ -2997,14 +2997,13 @@ section:has(.observe-me) {
   .brazwax-title.underline::after {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 60%;
     content: '';
     display: block;
-    width: 47%;
+    width: 50%;
     height: 100%;
     box-shadow: inset 0 -0.55em 0 #eeeeee;
     z-index: -1;
-    /* border: 3px solid orange; */
   }
 
 
@@ -3027,7 +3026,7 @@ section:has(.observe-me) {
       z-index: 60;
       box-shadow: 0 0 15px 7px rgba(118, 116, 116, 0.127);
       background-color: var(--color-white);
-      background-color: hotpink;
+
     }
 
 
@@ -3384,10 +3383,10 @@ section:has(.observe-me) {
   .brazwax-title.underline::after {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 30%;
     content: '';
     display: block;
-    width: 80%;
+    width: 100%;
     height: 100%;
     box-shadow: inset 0 -0.55em 0 #eeeeee;
     z-index: -1;

@@ -2080,7 +2080,7 @@ section:has(.observe-me) {
 @media (width < 786px) {
 
   .row.policies {
-    padding-bottom: 2em;
+    padding-bottom: 1.5em;
   }
 
 
