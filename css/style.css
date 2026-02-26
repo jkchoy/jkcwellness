@@ -309,6 +309,10 @@ html {
     gap: var(--grid-gap);
   }
 
+  .row.two-mobile.hours-time {
+    grid-template-columns: 100px 100px;
+  }
+
 }
 
 /* NEW width SYNTAX (updated from min-width: 768px)  */
