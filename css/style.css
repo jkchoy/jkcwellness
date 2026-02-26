@@ -1826,6 +1826,7 @@ section:has(.observe-me) {
 .feature-row {
   display: flex;
   gap: var(--unit-l);
+
 }
 
 /* LAYOUT 3 */
@@ -1964,6 +1965,17 @@ section:has(.observe-me) {
       grid-row: 2 / 2;
       /* z-index: 90; */
       color: var(--color-gray-100)
+    }
+
+    img {
+      width: 60%;
+      height: auto;
+    }
+
+    .feature-row {
+      display: flex;
+      gap: var(--unit-xs);
+
     }
 
   }
@@ -3210,4 +3222,24 @@ section:has(.observe-me) {
   display: flex;
   justify-content: center;
   padding-block-start: 5em;
+}
+
+.hours-time {
+  margin: 0;
+}
+
+.hours-info {
+  margin: 0;
+  line-height: 1.4;
+
+}
+
+.hours-note {
+  font-size: 16px;
+  color: var(--color-gray-600);
+
+}
+
+.one-half.hours {
+  padding-bottom: 0;
 }
