@@ -61,6 +61,9 @@ TABLE OF CONTENTS
   /* main blue */
   --color-blue-900: #043170;
   --color-blue-950: #042854;
+  --color-lightblue: #B2C8D6;
+
+  --color-blue-teal: #006998;
 
   /* light background boxes & title heading box*/
   --color-gray-100: #F2F2F2;
@@ -304,6 +307,10 @@ html {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: var(--grid-gap);
+  }
+
+  .row.two-mobile.hours-time {
+    grid-template-columns: 100px 100px;
   }
 
 }
@@ -622,7 +629,7 @@ html {
 /* SHOW MENU BUTTON ON HIGHER LAYER WHEN NAV IS OPEN */
 .site-nav .menubutton {
   position: relative;
-  z-index: 100;
+  z-index: 200;
   border: none;
   font-size: inherit;
   font-family: inherit;
@@ -808,10 +815,32 @@ section {
 
 /* SITE FOOTER */
 .site-footer {
+  margin-top: 6em;
   background-color: var(--color-sitefooter-background);
   padding-block: var(--unit-2xl);
   padding-inline: var(--unit-s);
 }
+
+.site-footer ul {
+  margin: 0;
+  padding: 0;
+}
+
+@media (width >=768px) {
+  .site-footer .footer-row {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 3em;
+  }
+
+
+}
+
+.site-footer .footer-column {
+  margin-block-end: 4em;
+}
+
+
 
 /* REMOVE FOOTER PADDING IF IT HAS A CONTAINER */
 .site-footer:has(.container) {
@@ -1396,7 +1425,7 @@ section:has(.observe-me) {
 }
 
 .hero-content-subpage {
-  background-color: var(--color-blue-900);
+  background-color: var(--color-blue-teal);
   padding: var(--unit-xl);
   grid-column: 1 / 8;
   grid-row: 2 / 6;
@@ -1801,6 +1830,7 @@ section:has(.observe-me) {
 .feature-row {
   display: flex;
   gap: var(--unit-l);
+
 }
 
 /* LAYOUT 3 */
@@ -1939,6 +1969,17 @@ section:has(.observe-me) {
       grid-row: 2 / 2;
       /* z-index: 90; */
       color: var(--color-gray-100)
+    }
+
+    img {
+      width: 60%;
+      height: auto;
+    }
+
+    .feature-row {
+      display: flex;
+      gap: var(--unit-xs);
+
     }
 
   }
@@ -3177,4 +3218,32 @@ section:has(.observe-me) {
     gap: var(--grid-gap);
   }
 
+}
+
+
+/* INSTAGRAM */
+.instagram .container {
+  display: flex;
+  justify-content: center;
+  padding-block-start: 5em;
+}
+
+.hours-time {
+  margin: 0;
+}
+
+.hours-info {
+  margin: 0;
+  line-height: 1.4;
+
+}
+
+.hours-note {
+  font-size: 16px;
+  color: var(--color-gray-600);
+
+}
+
+.one-half.hours {
+  padding-bottom: 0;
 }
