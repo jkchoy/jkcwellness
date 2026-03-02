@@ -1890,7 +1890,7 @@ section:has(.observe-me) {
 
 
 .box-layout-11 {
-  grid-template-rows: repeat(30, 90px);
+  grid-template-rows: repeat(31, 90px);
 
   /* border: 1px solid green; */
 
@@ -1957,7 +1957,7 @@ section:has(.observe-me) {
 
   .box-blue.five {
     grid-column: 1 / 13;
-    grid-row: 22 / 31;
+    grid-row: 22 / 32;
     z-index: 20;
     background-color: var(--color-blue-950);
   }

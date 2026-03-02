@@ -2067,7 +2067,7 @@ section:has(.observe-me) {
 .box-layout-contact {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(16, 50px);
+  grid-template-rows: repeat(15, 50px);
 }
 
 .box-layout-contact-1 {
@@ -2095,7 +2095,7 @@ section:has(.observe-me) {
 
   .div-4 {
     grid-column: 5 / 9;
-    grid-row: 12 / 15;
+    grid-row: 11 / 14;
 
 
   }
