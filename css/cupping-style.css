@@ -2175,6 +2175,7 @@ section:has(.observe-me) {
 .box-layout-9 {
 
   grid-template-rows: repeat(18, 90px);
+  padding-bottom: 4em;
 
   /* border: 1px solid green; */
 
